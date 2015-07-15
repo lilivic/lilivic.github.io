@@ -1,20 +1,20 @@
 'use strict';
 
-describe('Controller: MainCtrl', function () {
+describe('Controller: GridCtrl', function () {
 
   // load the controller's module
   beforeEach(module('lilivicApp'));
 
-  var MainCtrl;
+  var GridCtrl;
 
   // Initialize the controller and a mock scope
   beforeEach(inject(function ($controller, $rootScope) {
-    MainCtrl = $controller('MainCtrl', {
+    GridCtrl = $controller('GridCtrl', {
       // place here mocked dependencies
     });
   }));
 
-  it('should attach a list of awesomeThings to the scope', function () {
-    expect(MainCtrl.awesomeThings.length).toBe(3);
-  });
+  //it('should attach a list of awesomeThings to the scope', function () {
+  //  expect(GridCtrl.awesomeThings.length).toBe(3);
+  //});
 });

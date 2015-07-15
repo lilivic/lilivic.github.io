@@ -1,7 +1,7 @@
-/node_modules
-/dist
-/.tmp
-/.sass-cache
-/bower_components
-/.idea
-*.iml
+/project/node_modules
+/project/dist
+/project/.tmp
+/project/.sass-cache
+/project/bower_components
+/project/.idea
+/project/*.iml

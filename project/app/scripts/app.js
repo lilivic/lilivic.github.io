@@ -25,6 +25,11 @@ angular
         controller: 'GridCtrl',
         controllerAs: 'grid'
       })
+      .when('/shop', {
+        templateUrl: 'views/shop.html',
+        controller: 'ShopCtrl',
+        controllerAs: 'shop'
+      })
       .otherwise({
         redirectTo: '/'
       });

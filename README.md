@@ -1,12 +1,13 @@
 # Lilivic Flag
 
 ## Offers
-* Interior Project
+* Wall Painting
 
 * Architecture Sets
   * Furniture
   * Tapestries
   * Art prints
+  
 * E-commerce Seasonal stuff, limited edition (monthly)
   * Mugs
   * Bags

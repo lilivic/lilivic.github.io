@@ -3,5 +3,5 @@
 /project/.tmp
 /project/.sass-cache
 /project/bower_components
-/project/.idea
 /project/*.iml
+.idea/

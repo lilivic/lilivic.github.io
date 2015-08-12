@@ -1,3 +1,5 @@
+@import "compass/css3";
+
 $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
 // bower:scss
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
@@ -12,6 +14,8 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 
 body {
   padding: 0;
+  background: url("../images/under_construction.jpg") no-repeat fixed center right;
+  @include background-size(cover);
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -43,6 +47,8 @@ body {
   padding-top: 19px;
   color: #777;
   border-top: 1px solid #e5e5e5;
+
+  display: none; // hidden for now
 }
 
 .container-narrow > hr {
@@ -69,6 +75,15 @@ body {
 }
 
 .under_construction {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  position: absolute;
+  top: 40%;
+  color: white;
+  h1 {
+    font-size: 5em;
+    font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial;
+    @include text-shadow(rgba(gray, 0.2) 2px 2px 0, rgba(gray, 0.2) 2px 2px 0, rgba(gray, 0.2) 3px 3px 0);
+    small {
+      color: red;
+    }
+  }
 }

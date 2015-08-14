@@ -16,7 +16,7 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 
 body {
   padding: 0;
-  background: url("../images/under_construction.jpg") no-repeat fixed center right;
+  background: url("../images/under_construction.jpg") no-repeat fixed center left;
   @include background-size(cover);
 }
 
@@ -77,15 +77,18 @@ body {
 }
 
 .under_construction {
-  opacity: 0.5;
+  opacity: 0.6;
   position: absolute;
-  top: 33%;
+  top: 35%;
   width: 100%;
   font-family: 'Wire One', sans-serif;
   background-color: black;
   padding: 0.5em;
+  border: 0px;
+
   h1 {
     font-size: 5em;
+    font-weight: bold;
     color: white;
     line-height: 0.7;
     small {

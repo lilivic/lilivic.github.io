@@ -5,6 +5,8 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
 
+@import url(http://fonts.googleapis.com/css?family=Wire+One);
+
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -75,15 +77,20 @@ body {
 }
 
 .under_construction {
+  opacity: 0.5;
   position: absolute;
-  top: 40%;
-  color: white;
+  top: 33%;
+  width: 100%;
+  font-family: 'Wire One', sans-serif;
+  background-color: black;
+  padding: 0.5em;
   h1 {
     font-size: 5em;
-    font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial;
-    @include text-shadow(rgba(gray, 0.2) 2px 2px 0, rgba(gray, 0.2) 2px 2px 0, rgba(gray, 0.2) 3px 3px 0);
+    color: white;
+    line-height: 0.7;
     small {
-      color: red;
+      color: white;
+      font-style: italic;
     }
   }
 }

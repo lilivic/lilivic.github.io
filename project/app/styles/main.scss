@@ -5,7 +5,12 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
 
+// titulos das obras
 @import url(http://fonts.googleapis.com/css?family=Wire+One);
+// titulo principal
+@import url(https://fonts.googleapis.com/css?family=Old+Standard+TT);
+// itens do menu
+@import url(https://fonts.googleapis.com/css?family=Jura);
 
 body {
   padding: 0;
@@ -81,19 +86,25 @@ body {
 }
 
 .site-title {
-  font-family: 'Wire One', sans-serif;
+  //font-family: 'Wire One', sans-serif;
+  font-family: 'Old Standard TT', serif;
   a {
-    font-size: 3em;
-    font-weight: bold;
+    font-size: 4em;
+    //font-weight: bold;
   }
   h1 {
-    font-size: 5em;
-    font-weight: bold;
+    font-size: 4em;
+    //font-weight: bold;
   }
 }
 
 .site-navigation {
   list-style-type: none;
+  font-family: 'Jura', sans-serif;
+  font-size: 1.5em;
+  a {
+    color: #2B2B2B;
+  }
   padding: {
     left: 10px;
   }

@@ -78,41 +78,37 @@
 
 <div class="container">
   <div class="row">
-    <div class="col-md-3 hidden-xs">
-      <div class="row">
-        <div class="col-md-12">
-          <ul ng-controller="NavigationCtrl" class="site-navigation">
-            <li>
-              <a ng-href="#/works">
-                <span ng-bind="label.works"></span>
-              </a>
-            </li>
-            <li>
-              <a ng-href="#/shop">
-                <span ng-bind="label.shop"></span>
-              </a>
-            </li>
-            <li>
-              <a ng-href="#/blog">
-                <span ng-bind="label.blog"></span>
-              </a>
-            </li>
-            <li>
-              <a ng-href="#/contact">
-                <span ng-bind="label.contact"></span>
-              </a>
-            </li>
-            <li>
-              <a ng-href="#/about">
-                <span ng-bind="label.about"></span>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-
+    <div class="col-sm-3 hidden-xs">
+      <ul ng-controller="NavigationCtrl" class="site-navigation">
+        <li>
+          <a ng-href="#/works">
+            <span ng-bind="label.works"></span>
+          </a>
+        </li>
+        <li>
+          <a ng-href="#/shop">
+            <span ng-bind="label.shop"></span>
+          </a>
+        </li>
+        <li>
+          <a ng-href="#/blog">
+            <span ng-bind="label.blog"></span>
+          </a>
+        </li>
+        <li>
+          <a ng-href="#/contact">
+            <span ng-bind="label.contact"></span>
+          </a>
+        </li>
+        <li>
+          <a ng-href="#/about">
+            <span ng-bind="label.about"></span>
+          </a>
+        </li>
+      </ul>
     </div>
-    <div class="col-md-9 col-xs-12" ng-view=""/>
+
+    <div class="col-sm-9 col-xs-12" ng-view=""/>
   </div>
 </div>
 
@@ -146,15 +142,19 @@
 <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js"></script>
 <script src="bower_components/angular-route/angular-route.js"></script>
 <script src="bower_components/angular-touch/angular-touch.js"></script>
+<script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
 <!-- endbower -->
 <!-- endbuild -->
 
 <!-- build:js({.tmp,app}) scripts/scripts.js -->
 <script src="scripts/app.js"></script>
-<script src="scripts/controllers/navigation.js"></script>
+<script src="scripts/controllers/about.js"></script>
+<script src="scripts/controllers/blog.js"></script>
+<script src="scripts/controllers/contact.js"></script>
 <script src="scripts/controllers/home.js"></script>
-<script src="scripts/controllers/grid.js"></script>
+<script src="scripts/controllers/navigation.js"></script>
 <script src="scripts/controllers/shop.js"></script>
+<script src="scripts/controllers/works.js"></script>
 <!-- endbuild -->
 </body>
 </html>

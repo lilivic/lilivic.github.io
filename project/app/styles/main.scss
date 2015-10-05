@@ -69,32 +69,22 @@ body {
   }
 }
 
-.under_construction {
-  width: 100%;
-  font-family: 'Wire One', sans-serif;
-  padding: 0.5em;
-
-  h1 {
+.page-content {
+  h2 {
+    font-family: 'Wire One', sans-serif;
     font-size: 4em;
-    font-weight: bold;
-    line-height: 0.7;
-    small {
-      color: darkgray;
-      font-style: italic;
-    }
+    margin: 0;
+    text-align: right;
   }
 }
 
 .site-title {
-  //font-family: 'Wire One', sans-serif;
   font-family: 'Old Standard TT', serif;
   a {
     font-size: 4em;
-    //font-weight: bold;
   }
   h1 {
     font-size: 4em;
-    //font-weight: bold;
   }
 }
 

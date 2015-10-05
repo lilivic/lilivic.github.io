@@ -11,7 +11,8 @@
 angular
   .module('lilivicApp', [
     'ngRoute',
-    'ngTouch'
+    'ngTouch',
+    'ui.bootstrap'
   ])
   .config(function ($routeProvider) {
     $routeProvider
@@ -20,15 +21,30 @@ angular
         controller: 'HomeCtrl',
         controllerAs: 'home'
       })
-      .when('/grid', {
-        templateUrl: 'views/grid.html',
-        controller: 'GridCtrl',
-        controllerAs: 'grid'
+      .when('/works', {
+        templateUrl: 'views/works.html',
+        controller: 'WorksCtrl',
+        controllerAs: 'works'
       })
       .when('/shop', {
         templateUrl: 'views/shop.html',
         controller: 'ShopCtrl',
         controllerAs: 'shop'
+      })
+      .when('/blog', {
+        templateUrl: 'views/blog.html',
+        controller: 'BlogCtrl',
+        controllerAs: 'blog'
+      })
+      .when('/contact', {
+        templateUrl: 'views/contact.html',
+        controller: 'ContactCtrl',
+        controllerAs: 'contact'
+      })
+      .when('/about', {
+        templateUrl: 'views/about.html',
+        controller: 'AboutCtrl',
+        controllerAs: 'about'
       })
       .otherwise({
         redirectTo: '/'

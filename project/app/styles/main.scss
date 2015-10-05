@@ -5,24 +5,21 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
 
+// titulos das obras
 @import url(http://fonts.googleapis.com/css?family=Wire+One);
-
-.browsehappy {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
-}
+// titulo principal
+@import url(https://fonts.googleapis.com/css?family=Old+Standard+TT);
+// itens do menu
+@import url(https://fonts.googleapis.com/css?family=Jura);
 
 body {
   padding: 0;
-  background: url("../images/under_construction.jpg") no-repeat fixed center left;
-  @include background-size(cover);
+  //background: url("../images/under_construction.jpg") no-repeat fixed center left;
+  //@include background-size(cover);
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
-.marketing,
 .footer {
   padding-left: 15px;
   padding-right: 15px;
@@ -32,9 +29,6 @@ body {
 .header {
   border-bottom: 1px solid #e5e5e5;
   margin-bottom: 10px;
-
-  display: none; // hidden for now
-
   /* Make the masthead heading the same height as the navigation */
   h3 {
     margin-top: 0;
@@ -65,7 +59,6 @@ body {
 
   /* Remove the padding we set earlier */
   .header,
-  .marketing,
   .footer {
     padding-left: 0;
     padding-right: 0;
@@ -76,24 +69,41 @@ body {
   }
 }
 
-.under_construction {
-  opacity: 0.6;
-  position: absolute;
-  top: 35%;
-  width: 100%;
-  font-family: 'Wire One', sans-serif;
-  background-color: black;
-  padding: 0.5em;
-  border: 0px;
+.page-content {
+  h2 {
+    font-family: 'Wire One', sans-serif;
+    font-size: 4em;
+    margin: 0;
+    text-align: right;
+  }
 
+  .carousel-control.left, .carousel-control.right {
+    background-image: none;
+  }
+
+  .carousel-container {
+    height: 400px;
+  }
+}
+
+.site-title {
+  font-family: 'Old Standard TT', serif;
+  a {
+    font-size: 4em;
+  }
   h1 {
-    font-size: 5em;
-    font-weight: bold;
-    color: white;
-    line-height: 0.7;
-    small {
-      color: white;
-      font-style: italic;
-    }
+    font-size: 4em;
+  }
+}
+
+.site-navigation {
+  list-style-type: none;
+  font-family: 'Jura', sans-serif;
+  font-size: 1.5em;
+  a {
+    color: #2B2B2B;
+  }
+  padding: {
+    left: 10px;
   }
 }

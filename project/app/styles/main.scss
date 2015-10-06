@@ -18,6 +18,13 @@ body {
   //@include background-size(cover);
 }
 
+a {
+  color: #2B2B2B;
+  &:hover, &:active, &:focus {
+    text-decoration: none;
+  }
+}
+
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
 .footer {
@@ -36,6 +43,22 @@ body {
     line-height: 40px;
     padding-bottom: 19px;
   }
+
+  .navbar {
+    margin: {
+      top: 20px;
+    }
+  }
+
+  .navbar-default, .navbar-collapse {
+    background-color: white;
+    border-color: white;
+  }
+
+  .navbar-brand {
+    font-size: 4em;
+  }
+
 }
 
 /* Custom page footer */
@@ -74,6 +97,9 @@ body {
     font-family: 'Wire One', sans-serif;
     font-size: 4em;
     margin: 0;
+    padding: {
+      right: 30px;
+    }
     text-align: right;
   }
 
@@ -88,9 +114,6 @@ body {
 
 .site-title {
   font-family: 'Old Standard TT', serif;
-  a {
-    font-size: 4em;
-  }
   h1 {
     font-size: 4em;
   }
@@ -100,9 +123,6 @@ body {
   list-style-type: none;
   font-family: 'Jura', sans-serif;
   font-size: 1.5em;
-  a {
-    color: #2B2B2B;
-  }
   padding: {
     left: 10px;
   }

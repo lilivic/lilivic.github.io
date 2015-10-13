@@ -10,7 +10,7 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 // titulo principal
 @import url(https://fonts.googleapis.com/css?family=Old+Standard+TT);
 // itens do menu
-@import url(https://fonts.googleapis.com/css?family=Jura);
+@import url(https://fonts.googleapis.com/css?family=Buda:300);
 
 body {
   padding: 0;
@@ -130,9 +130,15 @@ a {
 
 .site-navigation {
   list-style-type: none;
-  font-family: 'Jura', sans-serif;
-  font-size: 1.5em;
+  font-family: 'Buda', cursive;
   padding: {
     left: 10px;
+  }
+  li > a {
+    font-size: 2em;
+    padding: {
+      top: 25px;
+      bottom: 5px;
+    }
   }
 }

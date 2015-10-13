@@ -8,7 +8,7 @@ angular.module('lilivicApp').controller('NavigationCtrl', function ($scope) {
     contact: 'Contato',
     shop: 'Shop',
     soon: 'em breve',
-    works: 'Trabalho'
+    works: 'Galeria'
   };
 
   $scope.label = pt_BR;

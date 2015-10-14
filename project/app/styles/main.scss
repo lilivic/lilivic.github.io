@@ -140,5 +140,8 @@ a {
       top: 25px;
       bottom: 5px;
     }
+    &.selected, &.selected:hover, &.selected:active, &.selected:focus {
+      color: red;
+    }
   }
 }

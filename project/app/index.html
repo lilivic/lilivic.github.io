@@ -36,22 +36,22 @@
 
         <ul class="nav navbar-nav site-navigation">
           <li>
-            <a ng-href="#/works">
+            <a ng-href="#/works" ng-class="viewLinkClass('works')">
               <span ng-bind="label.works| lowercase"></span>
             </a>
           </li>
           <li>
-            <a ng-href="#/shop">
+            <a ng-href="#/shop" ng-class="viewLinkClass('shop')">
               <span ng-bind="label.shop| lowercase"></span>
             </a>
           </li>
           <li>
-            <a ng-href="#/blog">
+            <a ng-href="#/blog" ng-class="viewLinkClass('blog')">
               <span ng-bind="label.blog| lowercase"></span>
             </a>
           </li>
           <li>
-            <a ng-href="#/about">
+            <a ng-href="#/about" ng-class="viewLinkClass('about')">
               <span ng-bind="label.about| lowercase"></span>
             </a>
           </li>
@@ -59,12 +59,12 @@
 
         <ul class="nav navbar-nav navbar-right site-navigation">
           <li>
-            <a href="javascript:void(0)" ng-click="setI18n('pt_BR')">
+            <a href="javascript:void(0)" ng-click="setI18n('pt_BR')" ng-class="labelLinkClass('pt_BR')">
               pt
             </a>
           </li>
           <li>
-            <a href="javascript:void(0)" ng-click="setI18n('en')">
+            <a href="javascript:void(0)" ng-click="setI18n('en')" ng-class="labelLinkClass('en')">
               en
             </a>
           </li>

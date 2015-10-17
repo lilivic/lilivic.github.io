@@ -20,7 +20,7 @@ body {
 }
 
 a {
-  color: #2B2B2B;
+  color: #000;
   &:hover, &:active, &:focus {
     text-decoration: none;
   }
@@ -58,6 +58,7 @@ a {
 
   .navbar-brand {
     font-size: 4em;
+    color: #000;
   }
 
 }
@@ -131,6 +132,7 @@ a {
 .site-navigation {
   list-style-type: none;
   font-family: 'Buda', cursive;
+  font-size: 0.6em;
   padding: {
     left: 10px;
   }

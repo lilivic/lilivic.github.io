@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('lilivicApp').controller('WorksCtrl', function ($scope) {
+angular.module('lilivicApp').controller('WorksCtrl', function ($rootScope, $scope) {
   $scope.interval = 30000;
   $scope.noWrapSlides = false;
   $scope.slides = [];
@@ -11,5 +11,7 @@ angular.module('lilivicApp').controller('WorksCtrl', function ($scope) {
       image: '/images/works/' + i + '.jpg'
     });
   }
+
+  $rootScope.$broadcast(constants.EVENTS.VIEW_CHANGE);
 
 });

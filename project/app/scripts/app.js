@@ -8,6 +8,16 @@
  *
  * Main module of the application.
  */
+
+
+var constants = {
+  EVENTS: {
+    VIEW_CHANGE: 'viewChange'
+  }
+};
+
+console.log(constants);
+
 angular
   .module('lilivicApp', [
     'ngRoute',
@@ -16,7 +26,7 @@ angular
   ])
   .config(function ($routeProvider) {
     $routeProvider
-      .when('/', {
+      .when('/home', {
         templateUrl: 'views/home.html',
         controller: 'HomeCtrl',
         controllerAs: 'home'
@@ -47,6 +57,6 @@ angular
         controllerAs: 'about'
       })
       .otherwise({
-        redirectTo: '/'
+        redirectTo: '/home'
       });
   });

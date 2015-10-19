@@ -12,11 +12,11 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 // itens do menu
 @import url(https://fonts.googleapis.com/css?family=Buda:300);
 
+@import "home";
+
 body {
   padding: 0;
   height: 100%;
-  //background: url("../images/under_construction.jpg") no-repeat fixed center left;
-  //@include background-size(cover);
 }
 
 a {
@@ -46,8 +46,14 @@ a {
   }
 
   .navbar {
+    background-color: #FFF;
     margin: {
+      top: 0;
+      bottom: 0;
+    }
+    padding: {
       top: 20px;
+      bottom: 20px;
     }
   }
 
@@ -133,13 +139,14 @@ a {
   list-style-type: none;
   font-family: 'Buda', cursive;
   font-size: 0.6em;
+  max-width: 325px;
   padding: {
     left: 10px;
   }
   li > a {
     font-size: 2em;
     padding: {
-      top: 25px;
+      top: 5px;
       bottom: 5px;
     }
     &.selected, &.selected:hover, &.selected:active, &.selected:focus {

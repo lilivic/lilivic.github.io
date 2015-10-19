@@ -5,31 +5,36 @@
 }
 
 .home_background_1 {
-  background: url("../images/muNA_cover.jpg") no-repeat fixed top left;
+  background: url("../images/illustration_cover.jpg") no-repeat fixed top left;
   @include background-size(cover);
 }
 
 .home_background_2 {
-  background: url("../images/muDP_cover.jpg") no-repeat fixed top left;
+  background: url("../images/muNA_cover.jpg") no-repeat fixed top left;
   @include background-size(cover);
 }
 
 .home_background_3 {
-  background: url("../images/muBS_cover.jpg") no-repeat fixed top left;
+  background: url("../images/muDP_cover.jpg") no-repeat fixed top left;
   @include background-size(cover);
 }
 
 .home_background_4 {
-  background: url("../images/muCards_cover_1.jpg") no-repeat fixed top left;
+  background: url("../images/muBS_cover.jpg") no-repeat fixed top left;
   @include background-size(cover);
 }
 
 .home_background_5 {
-  background: url("../images/muCards_cover_2.jpg") no-repeat fixed top left;
+  background: url("../images/cards_cover_1.jpg") no-repeat fixed top left;
   @include background-size(cover);
 }
 
 .home_background_6 {
-  background: url("../images/muCards_cover_3.jpg") no-repeat fixed top left;
+  background: url("../images/cards_cover_2.jpg") no-repeat fixed top left;
+  @include background-size(cover);
+}
+
+.home_background_7 {
+  background: url("../images/cards_cover_3.jpg") no-repeat fixed top left;
   @include background-size(cover);
 }

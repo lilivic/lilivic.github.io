@@ -3,7 +3,7 @@
 angular.module('lilivicApp').controller('GlobalStateCtrl', function ($scope, $location, $timeout) {
 
   $scope.bodyClass = '';
-  $scope.homeClassCounter = 1;
+  $scope.homeClassCounter = 0;
 
   var homeTimeoutFunction = function () {
     $scope.homeClassCounter++;
@@ -11,7 +11,7 @@ angular.module('lilivicApp').controller('GlobalStateCtrl', function ($scope, $lo
       $scope.homeClassCounter = 1;
     }
     $scope.bodyClass = 'home_background_' + $scope.homeClassCounter;
-    $scope.timeout = $timeout($scope.timeoutFunction, 10000);
+    $scope.timeout = $timeout($scope.timeoutFunction, 12000);
   };
 
   var blankBackground = function () {

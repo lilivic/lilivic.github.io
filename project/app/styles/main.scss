@@ -10,17 +10,17 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 // titulo principal
 @import url(https://fonts.googleapis.com/css?family=Old+Standard+TT);
 // itens do menu
-@import url(https://fonts.googleapis.com/css?family=Jura);
+@import url(https://fonts.googleapis.com/css?family=Buda:300);
+
+@import "home";
 
 body {
   padding: 0;
   height: 100%;
-  //background: url("../images/under_construction.jpg") no-repeat fixed center left;
-  //@include background-size(cover);
 }
 
 a {
-  color: #2B2B2B;
+  color: #000;
   &:hover, &:active, &:focus {
     text-decoration: none;
   }
@@ -46,8 +46,14 @@ a {
   }
 
   .navbar {
+    background-color: #FFF;
     margin: {
+      top: 0;
+      bottom: 0;
+    }
+    padding: {
       top: 20px;
+      bottom: 20px;
     }
   }
 
@@ -58,6 +64,7 @@ a {
 
   .navbar-brand {
     font-size: 4em;
+    color: #000;
   }
 
 }
@@ -130,9 +137,20 @@ a {
 
 .site-navigation {
   list-style-type: none;
-  font-family: 'Jura', sans-serif;
-  font-size: 1.5em;
+  font-family: 'Buda', cursive;
+  font-size: 0.6em;
+  max-width: 325px;
   padding: {
     left: 10px;
+  }
+  li > a {
+    font-size: 2em;
+    padding: {
+      top: 5px;
+      bottom: 5px;
+    }
+    &.selected, &.selected:hover, &.selected:active, &.selected:focus {
+      color: red;
+    }
   }
 }

@@ -5,7 +5,7 @@ angular.module('lilivicApp').controller('HomeCtrl', function ($rootScope, $scope
   $scope.panelClass = 'hide';
 
   var callback = function () {
-    //$scope.panelClass = 'animation_test';
+    $scope.panelClass = 'fade_in_animation home_cover_background_1';
   };
   $timeout(callback, 3000);
 

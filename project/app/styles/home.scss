@@ -1,44 +1,48 @@
 @import "compass/css3/background-size";
 
-.blank_background {
-  background: #FFF;
-}
-
-.home_background_1 {
+.home_cover_background_1 {
   background: url("../images/illustration_cover.jpg") no-repeat fixed top left;
   @include background-size(cover);
 }
 
-.home_background_2 {
+.home_cover_background_2 {
   background: url("../images/muNA_cover.jpg") no-repeat fixed top left;
   @include background-size(cover);
 }
 
-.home_background_3 {
+.home_cover_background_3 {
   background: url("../images/muDP_cover.jpg") no-repeat fixed top left;
   @include background-size(cover);
 }
 
-.home_background_4 {
+.home_cover_background_4 {
   background: url("../images/muBS_cover.jpg") no-repeat fixed top left;
   @include background-size(cover);
 }
 
-.home_background_5 {
+.home_cover_background_5 {
   background: url("../images/cards_cover_1.jpg") no-repeat fixed top left;
   @include background-size(cover);
 }
 
-.home_background_6 {
+.home_cover_background_6 {
   background: url("../images/cards_cover_2.jpg") no-repeat fixed top left;
   @include background-size(cover);
 }
 
-.home_background_7 {
+.home_cover_background_7 {
   background: url("../images/cards_cover_3.jpg") no-repeat fixed top left;
   @include background-size(cover);
 }
 
-.animation_test {
+.home_cover {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.fade_in_animation {
   animation: fadeIn 1.0s;
 }

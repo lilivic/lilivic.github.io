@@ -14,8 +14,7 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 
 @import "home";
 
-body {
-  padding: 0;
+html, body {
   height: 100%;
 }
 
@@ -35,8 +34,11 @@ a {
 
 /* Custom page header */
 .header {
+  position: fixed;
+  width: 100%;
   border-bottom: 1px solid #e5e5e5;
-  margin-bottom: 10px;
+  z-index: 2;
+  background-color: white;
   /* Make the masthead heading the same height as the navigation */
   h3 {
     margin-top: 0;
@@ -69,19 +71,6 @@ a {
 
 }
 
-/* Custom page footer */
-.footer {
-  padding-top: 19px;
-  color: #777;
-  border-top: 1px solid #e5e5e5;
-
-  display: none; // hidden for now
-}
-
-.container-narrow > hr {
-  margin: 30px 0;
-}
-
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
   .container {
@@ -89,14 +78,9 @@ a {
   }
 
   /* Remove the padding we set earlier */
-  .header,
-  .footer {
+  .header, .footer {
     padding-left: 0;
     padding-right: 0;
-  }
-  /* Space out the masthead */
-  .header {
-    margin-bottom: 30px;
   }
 }
 
@@ -106,25 +90,21 @@ a {
     font-size: 4em;
     margin: 0;
     padding: {
+      top: 90px;
       right: 30px;
     }
     text-align: right;
   }
 
+  height: 100%;
+
   iframe {
-    width: 95%;
-    height: 500px;
-    .site-header {
-      display: none;
+    padding: {
+      top: 50px;
     }
-  }
-
-  .carousel-control.left, .carousel-control.right {
-    background-image: none;
-  }
-
-  .carousel-container {
-    height: 400px;
+    display: block;
+    height: 100%;
+    width: 100%;
   }
 }
 

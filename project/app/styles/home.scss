@@ -38,3 +38,7 @@
   background: url("../images/cards_cover_3.jpg") no-repeat fixed top left;
   @include background-size(cover);
 }
+
+.animation_test {
+  animation: fadeIn 1.0s;
+}

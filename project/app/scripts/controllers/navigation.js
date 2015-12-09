@@ -1,46 +1,27 @@
 'use strict';
 
-var labels = {
-  en: {
-    about: 'Bio',
-    blog: 'Blog',
-    shop: 'Shop',
-    soon: 'Soon',
-    works: 'Gallery'
-  },
-  pt_BR: {
-    about: 'Bio',
-    blog: 'Blog',
-    shop: 'Shop',
-    soon: 'Em breve',
-    works: 'Galeria'
-  }
-};
+angular.module('lilivicApp').controller('NavigationCtrl', function ($scope, $location, i18n) {
 
-angular.module('lilivicApp').controller('NavigationCtrl', function ($scope, $location) {
-  $scope.currentI18n = 'pt_BR';
-
-  $scope.setI18n = function (label) {
-    $scope.currentI18n = label;
-    $scope.label = labels[$scope.currentI18n];
-  };
-
-  $scope.setI18n($scope.currentI18n);
+  i18n.init($scope);
 
   $scope.labelLinkClass = function (label) {
     var itemClass = '';
-    if (label === $scope.currentI18n) {
+    if (label === i18n.getLanguage()) {
       itemClass += 'selected';
     }
     return itemClass;
   };
 
-  $scope.viewLinkClass = function (link) {
+  $scope.viewLinkClass = function (location) {
     var itemClass = '';
-    if ('/' + link === $location.path()) {
+    if ($scope.isCurrentLocation(location)) {
       itemClass += 'selected';
     }
     return itemClass;
+  };
+
+  $scope.isCurrentLocation = function (location) {
+    return $location.path().indexOf(location) > -1;
   };
 
 });

@@ -38,40 +38,54 @@
 
         <ul class="nav navbar-nav site-navigation">
           <li>
-            <a ng-href="#/works" ng-class="viewLinkClass('works')">
-              <span ng-bind="label.works| uppercase"></span>
+            <a ng-href="#/works/mu" ng-class="viewLinkClass('/works')">
+              <span ng-bind="getMessage('works')| uppercase"></span>
             </a>
           </li>
           <li>
-            <a ng-href="#/shop" ng-class="viewLinkClass('shop')">
-              <span ng-bind="label.shop| uppercase"></span>
+            <a ng-href="#/shop" ng-class="viewLinkClass('/shop')">
+              <span ng-bind="getMessage('shop')| uppercase"></span>
             </a>
           </li>
           <li>
-            <a ng-href="#/blog" ng-class="viewLinkClass('blog')">
-              <span ng-bind="label.blog| uppercase"></span>
+            <a ng-href="#/blog" ng-class="viewLinkClass('/blog')">
+              <span ng-bind="getMessage('blog')| uppercase"></span>
             </a>
           </li>
           <li>
-            <a ng-href="#/about" ng-class="viewLinkClass('about')">
-              <span ng-bind="label.about| uppercase"></span>
+            <a ng-href="#/about" ng-class="viewLinkClass('/about')">
+              <span ng-bind="getMessage('about')| uppercase"></span>
             </a>
           </li>
+        </ul>
 
+        <!-- Works sub navigation-->
+        <ul class="nav navbar-nav site-sub-navigation" ng-show="isCurrentLocation('/works')">
           <li>
-            <a ng-href="#/gallery/muNA/"></a>
+            <a href="#/works/wall" ng-class="viewLinkClass('/works/wall')">
+              <span ng-bind="getMessage('works_wall') | uppercase"></span>
+            </a>
           </li>
-
+          <li>
+            <a href="#/works/draw" ng-class="viewLinkClass('/works/draw')">
+              <span ng-bind="getMessage('works_draw') | uppercase"></span>
+            </a>
+          </li>
+          <li>
+            <a href="#/works/shape" ng-class="viewLinkClass('/works/shape')">
+              <span ng-bind="getMessage('works_shape') | uppercase"></span>
+            </a>
+          </li>
         </ul>
 
         <ul class="nav navbar-nav navbar-right site-navigation">
           <li>
-            <a href="javascript:void(0)" ng-click="setI18n('pt_BR')" ng-class="labelLinkClass('pt_BR')">
+            <a href="javascript:void(0)" ng-click="setLanguage('pt')" ng-class="labelLinkClass('pt')">
               <span ng-bind="'pt'|uppercase"></span>
             </a>
           </li>
           <li>
-            <a href="javascript:void(0)" ng-click="setI18n('en')" ng-class="labelLinkClass('en')">
+            <a href="javascript:void(0)" ng-click="setLanguage('en')" ng-class="labelLinkClass('en')">
               <span ng-bind="'en'|uppercase"></span>
             </a>
           </li>
@@ -80,12 +94,6 @@
     </div>
   </div>
 </div>
-
-<!--<div class="container-fluid">-->
-<!--<div class="row">-->
-<!--<div class="col-xs-12" ng-view=""/>-->
-<!--</div>-->
-<!--</div>-->
 
 <div class="page-content" ng-view=""></div>
 
@@ -114,6 +122,7 @@
 
 <!-- build:js({.tmp,app}) scripts/scripts.js -->
 <script src="scripts/app.js"></script>
+<script src="scripts/services/i18n.js"></script>
 <script src="scripts/controllers/about.js"></script>
 <script src="scripts/controllers/blog.js"></script>
 <script src="scripts/controllers/home.js"></script>

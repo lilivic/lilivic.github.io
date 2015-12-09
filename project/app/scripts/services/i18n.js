@@ -8,14 +8,20 @@ angular.module('lilivicApp').service('i18n', function () {
       blog: 'Blog',
       shop: 'Shop',
       soon: 'Soon',
-      works: 'Gallery'
+      works: 'Gallery',
+      works_draw: 'Draws',
+      works_shape: 'Shapes',
+      works_wall: 'Walls'
     },
     pt: {
       about: 'Bio',
       blog: 'Blog',
       shop: 'Shop',
       soon: 'Em breve',
-      works: 'Galeria'
+      works: 'Galeria',
+      works_draw: 'Ilustrações',
+      works_shape: 'Shapes',
+      works_wall: 'Murais'
     }
   };
 

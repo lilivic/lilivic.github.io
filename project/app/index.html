@@ -8,7 +8,7 @@
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
   <!-- build:css(.) styles/vendor.css -->
   <!-- bower:css -->
-  <link rel="stylesheet" href="bower_components/animate.css/animate.css"/>
+  <link rel="stylesheet" href="bower_components/animate.css/animate.css" />
   <!-- endbower -->
   <!-- endbuild -->
   <!-- build:css(.tmp) styles/main.css -->
@@ -38,23 +38,42 @@
 
         <ul class="nav navbar-nav site-navigation">
           <li>
-            <a ng-href="#/works" ng-class="viewLinkClass('works')">
+            <a ng-href="#/works/mu" ng-class="viewLinkClass('/works')">
               <span ng-bind="getMessage('works')| uppercase"></span>
             </a>
           </li>
           <li>
-            <a ng-href="#/shop" ng-class="viewLinkClass('shop')">
+            <a ng-href="#/shop" ng-class="viewLinkClass('/shop')">
               <span ng-bind="getMessage('shop')| uppercase"></span>
             </a>
           </li>
           <li>
-            <a ng-href="#/blog" ng-class="viewLinkClass('blog')">
+            <a ng-href="#/blog" ng-class="viewLinkClass('/blog')">
               <span ng-bind="getMessage('blog')| uppercase"></span>
             </a>
           </li>
           <li>
-            <a ng-href="#/about" ng-class="viewLinkClass('about')">
+            <a ng-href="#/about" ng-class="viewLinkClass('/about')">
               <span ng-bind="getMessage('about')| uppercase"></span>
+            </a>
+          </li>
+        </ul>
+
+        <!-- Works sub navigation-->
+        <ul class="nav navbar-nav site-sub-navigation" ng-show="isCurrentLocation('/works')">
+          <li>
+            <a href="#/works/wall" ng-class="viewLinkClass('/works/wall')">
+              <span ng-bind="getMessage('works_wall') | uppercase"></span>
+            </a>
+          </li>
+          <li>
+            <a href="#/works/draw" ng-class="viewLinkClass('/works/draw')">
+              <span ng-bind="getMessage('works_draw') | uppercase"></span>
+            </a>
+          </li>
+          <li>
+            <a href="#/works/shape" ng-class="viewLinkClass('/works/shape')">
+              <span ng-bind="getMessage('works_shape') | uppercase"></span>
             </a>
           </li>
         </ul>

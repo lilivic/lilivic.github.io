@@ -12,12 +12,16 @@ angular.module('lilivicApp').controller('NavigationCtrl', function ($scope, $loc
     return itemClass;
   };
 
-  $scope.viewLinkClass = function (link) {
+  $scope.viewLinkClass = function (location) {
     var itemClass = '';
-    if ('/' + link === $location.path()) {
+    if ($scope.isCurrentLocation(location)) {
       itemClass += 'selected';
     }
     return itemClass;
+  };
+
+  $scope.isCurrentLocation = function (location) {
+    return $location.path().indexOf(location) > -1;
   };
 
 });

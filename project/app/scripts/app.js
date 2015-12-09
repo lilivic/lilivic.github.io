@@ -31,7 +31,7 @@ angular
         controller: 'HomeCtrl',
         controllerAs: 'home'
       })
-      .when('/works', {
+      .when('/works/:section', {
         templateUrl: 'views/works.html',
         controller: 'WorksCtrl',
         controllerAs: 'works'

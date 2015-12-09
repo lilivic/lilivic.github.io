@@ -1,37 +1,37 @@
 @import "compass/css3/background-size";
 
 .home_cover_background_1 {
-  background: url("../images/illustration_cover.jpg") no-repeat fixed top left;
+  background: url("../images/bg_home_1.jpg") no-repeat fixed top left;
   @include background-size(cover);
 }
 
 .home_cover_background_2 {
-  background: url("../images/muNA_cover.jpg") no-repeat fixed top left;
+  background: url("../images/bg_home_2.jpg") no-repeat fixed top left;
   @include background-size(cover);
 }
 
 .home_cover_background_3 {
-  background: url("../images/muDP_cover.jpg") no-repeat fixed top left;
+  background: url("../images/bg_home_3.jpg") no-repeat fixed top left;
   @include background-size(cover);
 }
 
 .home_cover_background_4 {
-  background: url("../images/muBS_cover.jpg") no-repeat fixed top left;
+  background: url("../images/bg_home_4.jpg") no-repeat fixed top left;
   @include background-size(cover);
 }
 
 .home_cover_background_5 {
-  background: url("../images/cards_cover_1.jpg") no-repeat fixed top left;
+  background: url("../images/bg_home_5.jpg") no-repeat fixed top left;
   @include background-size(cover);
 }
 
 .home_cover_background_6 {
-  background: url("../images/cards_cover_2.jpg") no-repeat fixed top left;
+  background: url("../images/bg_home_6.jpg") no-repeat fixed top left;
   @include background-size(cover);
 }
 
 .home_cover_background_7 {
-  background: url("../images/cards_cover_3.jpg") no-repeat fixed top left;
+  background: url("../images/bg_home_7.jpg") no-repeat fixed top left;
   @include background-size(cover);
 }
 
@@ -41,6 +41,25 @@
   left: 0;
   height: 100%;
   width: 100%;
+}
+
+.home_video {
+  height: 100%;
+  z-index: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+
+  & > video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .fade_in_animation {

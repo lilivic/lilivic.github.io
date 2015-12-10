@@ -1,17 +1,41 @@
-<!--<div class="container-fluid works-container">-->
-  <!--<div class="row text-center">-->
-    <!--<div class="col-xs-4">A</div>-->
-    <!--<div class="col-xs-4">B</div>-->
-    <!--<div class="col-xs-4">C</div>-->
-  <!--</div>-->
+<!--<div class="container-fluid">-->
+<!--<div class="row">-->
+<!--<div class="col-xs-12">-->
+<!--<h2>-->
+<!--<span ng-bind="getMessage('soon')"></span>-->
+<!--</h2>-->
+<!--</div>-->
+<!--</div>-->
 <!--</div>-->
 
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-xs-12">
-      <h2>
-        <span ng-bind="getMessage('soon')"></span>
-      </h2>
+<script type="text/ng-template" id="workModalContent.html">
+  <div class="modal-body">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-12">
+          <img ng-src="{{ image }}">
+        </div>
+      </div>
+    </div>
+  </div>
+</script>
+
+<div class="container-fluid works-container">
+  <div class="row text-center">
+    <div class="col-xs-4">
+      <a href="javascript:void(0)" class="thumbnail" ng-click="open('images/work_wall_1.jpg')">
+        <img src="images/work_wall_1_thumb.jpg">
+      </a>
+    </div>
+    <div class="col-xs-4">
+      <a href="javascript:void(0)" class="thumbnail" ng-click="open('images/work_wall_2.jpg')">
+        <img src="images/work_wall_2_thumb.jpg">
+      </a>
+    </div>
+    <div class="col-xs-4">
+      <a href="javascript:void(0)" class="thumbnail" ng-click="open('images/work_wall_3.jpg')">
+        <img src="images/work_wall_3_thumb.jpg">
+      </a>
     </div>
   </div>
 </div>

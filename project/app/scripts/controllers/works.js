@@ -28,4 +28,7 @@ angular.module('lilivicApp')
   })
   .controller('WorkModalCtrl', function ($scope, $modalInstance, image) {
     $scope.image = image;
+    $scope.dismiss = function () {
+      $modalInstance.dismiss('cancel');
+    }
   });

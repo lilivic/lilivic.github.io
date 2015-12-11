@@ -1,5 +1,30 @@
+@import "compass/css3/background-size";
+
 .works-container {
   padding: {
     top: 100px;
   }
+}
+
+.work-image {
+  max-height: 650px;
+}
+
+.work-thumbnail {
+  height: 300px;
+}
+
+.work-thumbnail-1 {
+  background: url("../images/work_wall_1_thumb.jpg");
+  @include background-size(cover);
+}
+
+.work-thumbnail-2 {
+  background: url("../images/work_wall_2_thumb.jpg");
+  @include background-size(cover);
+}
+
+.work-thumbnail-3 {
+  background: url("../images/work_wall_3_thumb.jpg");
+  @include background-size(cover);
 }

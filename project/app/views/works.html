@@ -4,7 +4,7 @@
       <div class="row">
         <div class="col-xs-12">
           <a href="javascript:void(0)" class="thumbnail">
-            <img src="{{image}}">
+            <img class="work-image" ng-src="{{image}}">
           </a>
         </div>
       </div>
@@ -14,19 +14,19 @@
 
 <div class="container-fluid works-container" ng-show="isCurrentSection('wall')">
   <div class="row text-center">
-    <div class="col-xs-4">
+    <div class="col-md-4">
       <a href="javascript:void(0)" class="thumbnail" ng-click="open('images/work_wall_1.jpg')">
-        <img src="images/work_wall_1_thumb.jpg">
+        <div class="work-thumbnail work-thumbnail-1"></div>
       </a>
     </div>
-    <div class="col-xs-4">
+    <div class="col-md-4">
       <a href="javascript:void(0)" class="thumbnail" ng-click="open('images/work_wall_2.jpg')">
-        <img src="images/work_wall_2_thumb.jpg">
+        <div class="work-thumbnail work-thumbnail-2"></div>
       </a>
     </div>
-    <div class="col-xs-4">
+    <div class="col-md-4">
       <a href="javascript:void(0)" class="thumbnail" ng-click="open('images/work_wall_3.jpg')">
-        <img src="images/work_wall_3_thumb.jpg">
+        <div class="work-thumbnail work-thumbnail-3"></div>
       </a>
     </div>
   </div>

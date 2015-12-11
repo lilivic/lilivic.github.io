@@ -1,5 +1,124 @@
+@import "compass/css3/background-size";
+@import "compass/css3/filter";
+
 .works-container {
   padding: {
     top: 100px;
+  }
+}
+
+.work-thumbnail {
+  height: 300px;
+}
+
+.work-navigation-link {
+  display: none;
+}
+
+.work-thumbnail-1 {
+  background: url("../images/work_wall_1_thumb.jpg");
+  @include background-size(cover);
+}
+
+.work-thumbnail-2 {
+  background: url("../images/work_wall_2_thumb.jpg");
+  @include background-size(cover);
+}
+
+.work-thumbnail-3 {
+  background: url("../images/work_wall_3_thumb.jpg");
+  @include background-size(cover);
+}
+
+.work-thumbnail-4 {
+  background: url("../images/work_wall_4_thumb.jpg");
+  @include background-size(cover);
+}
+
+.work-thumbnail-5 {
+  background: url("../images/work_wall_5_thumb.jpg");
+  @include background-size(cover);
+}
+
+.work-thumbnail-6 {
+  background: url("../images/work_wall_6_thumb.jpg");
+  @include background-size(cover);
+}
+
+.work-thumbnail-7 {
+  background: url("../images/work_wall_7_thumb.jpg");
+  @include background-size(cover);
+}
+
+.work-thumbnail-8 {
+  background: url("../images/work_wall_8_thumb.jpg");
+  @include background-size(cover);
+}
+
+.work-thumbnail-9 {
+  background: url("../images/work_wall_9_thumb.jpg");
+  @include background-size(cover);
+}
+
+.work-thumbnail-10 {
+  background: url("../images/work_wall_10_thumb.jpg");
+  @include background-size(cover);
+}
+
+.work-thumbnail-11 {
+  background: url("../images/work_wall_11_thumb.jpg");
+  @include background-size(cover);
+}
+
+.work-thumbnail-12 {
+  background: url("../images/work_wall_12_thumb.jpg");
+  @include background-size(cover);
+}
+
+.work-thumbnail-13 {
+  background: url("../images/work_wall_13_thumb.jpg");
+  @include background-size(cover);
+}
+
+.work-thumbnail-14 {
+  background: url("../images/work_wall_14_thumb.jpg");
+  @include background-size(cover);
+}
+
+.work-thumbnail-15 {
+  background: url("../images/work_wall_15_thumb.jpg");
+  @include background-size(cover);
+}
+
+.work-thumbnail-16 {
+  background: url("../images/work_wall_16_thumb.jpg");
+  @include background-size(cover);
+}
+
+@media screen and (min-width: 768px) {
+  a.thumbnail {
+    & > div.work-thumbnail {
+      @include filter(grayscale(100%));
+    }
+
+    &:hover > div.work-thumbnail {
+      @include filter(none);
+    }
+  }
+
+  .work-navigation-link {
+    //display: inline;
+    position: absolute;
+    font-size: 3em;
+    top: 45%;
+    &:hover {
+      color: red;
+    }
+    &:first-child {
+      left: 40px;
+    }
+    &:last-child {
+      right: 40px;
+    }
   }
 }

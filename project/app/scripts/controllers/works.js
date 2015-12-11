@@ -30,5 +30,5 @@ angular.module('lilivicApp')
     $scope.image = image;
     $scope.dismiss = function () {
       $modalInstance.dismiss('cancel');
-    }
+    };
   });

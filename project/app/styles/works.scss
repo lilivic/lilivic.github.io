@@ -1,5 +1,4 @@
-@import "compass/css3/background-size";
-@import "compass/css3/filter";
+@import "compass/css3";
 
 .works-container {
   padding: {
@@ -12,7 +11,25 @@
 }
 
 .work-navigation-link {
-  display: none;
+  $default-text-shadow-blur: 3px;
+  $default-text-shadow-v-offset: 1px;
+  color: white;
+  @include single-text-shadow;
+  display: inline;
+  position: absolute;
+  font-size: 5em;
+  top: 30px;
+
+  &:hover, &:active, &:focus {
+    color: white;
+  }
+
+  &:first-child {
+    left: 40px;
+  }
+  &:last-child {
+    right: 40px;
+  }
 }
 
 .work-thumbnail-1 {
@@ -95,6 +112,16 @@
   @include background-size(cover);
 }
 
+.work-thumbnail-17 {
+  background: url("../images/work_wall_17_thumb.jpg");
+  @include background-size(cover);
+}
+
+.work-thumbnail-18 {
+  background: url("../images/work_wall_18_thumb.jpg");
+  @include background-size(cover);
+}
+
 @media screen and (min-width: 768px) {
   a.thumbnail {
     & > div.work-thumbnail {
@@ -103,22 +130,6 @@
 
     &:hover > div.work-thumbnail {
       @include filter(none);
-    }
-  }
-
-  .work-navigation-link {
-    //display: inline;
-    position: absolute;
-    font-size: 3em;
-    top: 45%;
-    &:hover {
-      color: red;
-    }
-    &:first-child {
-      left: 40px;
-    }
-    &:last-child {
-      right: 40px;
     }
   }
 }

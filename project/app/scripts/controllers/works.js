@@ -1,8 +1,10 @@
 'use strict';
 
 angular.module('lilivicApp')
-  .controller('WorksCtrl', function ($rootScope, $scope, $modal, i18n) {
+  .controller('WorksCtrl', function ($rootScope, $scope, $routeParams, $modal, i18n) {
     i18n.init($scope);
+
+    $scope.currentSection = $routeParams.section;
 
     $scope.open = function (image) {
       $modal.open({
@@ -18,9 +20,12 @@ angular.module('lilivicApp')
       });
     };
 
+    $scope.isCurrentSection = function (section) {
+      return $scope.currentSection === section;
+    };
+
     $rootScope.$broadcast(constants.EVENTS.VIEW_CHANGE);
   })
   .controller('WorkModalCtrl', function ($scope, $modalInstance, image) {
     $scope.image = image;
-  })
-;
+  });

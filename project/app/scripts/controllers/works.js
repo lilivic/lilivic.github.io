@@ -7,8 +7,11 @@ angular.module('lilivicApp')
     $scope.currentSection = $routeParams.section;
 
     switch ($scope.currentSection) {
+      case 'draw':
+        $scope.currentSectionImageCount = 21;
+        break;
       case 'wall':
-        $scope.currentSectionImageCount = 18;
+        $scope.currentSectionImageCount = 20;
         break;
     }
 

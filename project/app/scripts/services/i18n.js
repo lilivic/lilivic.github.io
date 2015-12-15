@@ -6,6 +6,7 @@ angular.module('lilivicApp').service('i18n', function () {
     en: {
       about: 'Bio',
       blog: 'Blog',
+      powered_by: 'Powered By',
       shop: 'Shop',
       soon: 'Soon',
       works: 'Gallery',
@@ -18,6 +19,7 @@ angular.module('lilivicApp').service('i18n', function () {
       about: 'Bio',
       blog: 'Blog',
       shop: 'Shop',
+      powered_by: 'Uma invenção',
       soon: 'Em breve',
       works: 'Galeria',
       works_card: 'Cartões',

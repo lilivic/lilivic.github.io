@@ -102,6 +102,22 @@
 
 <div class="page-content" ng-view=""></div>
 
+
+<div class="footer">
+  <div class="navbar navbar-default" role="navigation" ng-controller="NavigationCtrl">
+    <div class="container-fluid">
+      <div class="navbar-brand navbar-right">
+        <a href="http://btech.software/#/web" class="navbar-link" target="_blank">
+          <img src="images/logo_btech_footer.png">
+        </a>
+      </div>
+      <p class="navbar-text navbar-right">
+        <span ng-bind="getMessage('powered_by')"></span>
+      </p>
+    </div>
+  </div>
+</div>
+
 <script>
   !function (A, n, g, u, l, a, r) {
     A.GoogleAnalyticsObject = l, A[l] = A[l] || function () {

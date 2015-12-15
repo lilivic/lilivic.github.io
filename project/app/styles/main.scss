@@ -34,6 +34,33 @@ a {
   padding-right: 15px;
 }
 
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  .navbar {
+    min-height: 25px;
+    background: rgba(255, 255, 255, 0.9);
+    margin: {
+      bottom: 0;
+    }
+  }
+  .navbar-text {
+    margin: {
+      top: 5px;
+      bottom: 5px;
+      right: 7px;
+    }
+  }
+  .navbar-brand {
+    max-height: 25px;
+    padding: {
+      top: 0;
+      bottom: 0;
+    }
+  }
+}
+
 /* Custom page header */
 .header {
   position: fixed;

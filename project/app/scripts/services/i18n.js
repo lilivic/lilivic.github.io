@@ -9,6 +9,7 @@ angular.module('lilivicApp').service('i18n', function () {
       shop: 'Shop',
       soon: 'Soon',
       works: 'Gallery',
+      works_card: 'Cards',
       works_draw: 'Draws',
       works_shape: 'Shapes',
       works_wall: 'Walls'
@@ -19,6 +20,7 @@ angular.module('lilivicApp').service('i18n', function () {
       shop: 'Shop',
       soon: 'Em breve',
       works: 'Galeria',
+      works_card: 'Cartões',
       works_draw: 'Ilustrações',
       works_shape: 'Shapes',
       works_wall: 'Murais'

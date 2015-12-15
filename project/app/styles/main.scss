@@ -140,9 +140,6 @@ a {
   bottom: 0;
   left: 200px;
   li > a {
-    padding: {
-      bottom: 25px;
-    }
     &.selected, &.selected:hover, &.selected:active, &.selected:focus {
       color: red;
     }

@@ -6,9 +6,11 @@ angular.module('lilivicApp').service('i18n', function () {
     en: {
       about: 'Bio',
       blog: 'Blog',
+      powered_by: 'Powered By',
       shop: 'Shop',
       soon: 'Soon',
       works: 'Gallery',
+      works_card: 'Cards',
       works_draw: 'Draws',
       works_shape: 'Shapes',
       works_wall: 'Walls'
@@ -17,8 +19,10 @@ angular.module('lilivicApp').service('i18n', function () {
       about: 'Bio',
       blog: 'Blog',
       shop: 'Shop',
+      powered_by: 'Uma invenção',
       soon: 'Em breve',
       works: 'Galeria',
+      works_card: 'Cartões',
       works_draw: 'Ilustrações',
       works_shape: 'Shapes',
       works_wall: 'Murais'

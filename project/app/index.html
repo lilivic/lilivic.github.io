@@ -76,6 +76,11 @@
               <span ng-bind="getMessage('works_shape') | uppercase"></span>
             </a>
           </li>
+          <li>
+            <a href="#/works/card" ng-class="viewLinkClass('/works/card')">
+              <span ng-bind="getMessage('works_card') | uppercase"></span>
+            </a>
+          </li>
         </ul>
 
         <ul class="nav navbar-nav navbar-right site-navigation">
@@ -96,6 +101,22 @@
 </div>
 
 <div class="page-content" ng-view=""></div>
+
+
+<div class="footer">
+  <div class="navbar navbar-default" role="navigation" ng-controller="NavigationCtrl">
+    <div class="container-fluid">
+      <div class="navbar-brand navbar-right">
+        <a href="http://btech.software/#/web" class="navbar-link" target="_blank">
+          <img src="images/logo_btech_footer.png">
+        </a>
+      </div>
+      <p class="navbar-text navbar-right">
+        <span ng-bind="getMessage('powered_by')"></span>
+      </p>
+    </div>
+  </div>
+</div>
 
 <script>
   !function (A, n, g, u, l, a, r) {

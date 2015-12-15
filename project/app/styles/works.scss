@@ -4,6 +4,11 @@
   padding: {
     top: 100px;
   }
+  .row:last-child {
+    margin: {
+      bottom: 30px;
+    }
+  }
 }
 
 .work-thumbnail {
@@ -30,6 +35,40 @@
   &:last-child {
     right: 40px;
   }
+}
+
+.work-modal {
+  min-height: 150px;
+}
+
+.work-card-thumbnail-1 {
+  background: url("../images/work_card_1_thumb.jpg");
+  @include background-size(cover);
+}
+
+.work-card-thumbnail-2 {
+  background: url("../images/work_card_2_thumb.jpg");
+  @include background-size(cover);
+}
+
+.work-card-thumbnail-3 {
+  background: url("../images/work_card_3_thumb.jpg");
+  @include background-size(cover);
+}
+
+.work-card-thumbnail-4 {
+  background: url("../images/work_card_4_thumb.jpg");
+  @include background-size(cover);
+}
+
+.work-card-thumbnail-5 {
+  background: url("../images/work_card_5_thumb.jpg");
+  @include background-size(cover);
+}
+
+.work-card-thumbnail-6 {
+  background: url("../images/work_card_6_thumb.jpg");
+  @include background-size(cover);
 }
 
 .work-draw-thumbnail-1 {
@@ -134,6 +173,51 @@
 
 .work-draw-thumbnail-21 {
   background: url("../images/work_draw_21_thumb.jpg");
+  @include background-size(cover);
+}
+
+.work-shape-thumbnail-1 {
+  background: url("../images/work_shape_1_thumb.jpg");
+  @include background-size(cover);
+}
+
+.work-shape-thumbnail-2 {
+  background: url("../images/work_shape_2_thumb.jpg");
+  @include background-size(cover);
+}
+
+.work-shape-thumbnail-3 {
+  background: url("../images/work_shape_3_thumb.jpg");
+  @include background-size(cover);
+}
+
+.work-shape-thumbnail-4 {
+  background: url("../images/work_shape_4_thumb.jpg");
+  @include background-size(cover);
+}
+
+.work-shape-thumbnail-5 {
+  background: url("../images/work_shape_5_thumb.jpg");
+  @include background-size(cover);
+}
+
+.work-shape-thumbnail-6 {
+  background: url("../images/work_shape_6_thumb.jpg");
+  @include background-size(cover);
+}
+
+.work-shape-thumbnail-7 {
+  background: url("../images/work_shape_7_thumb.jpg");
+  @include background-size(cover);
+}
+
+.work-shape-thumbnail-8 {
+  background: url("../images/work_shape_8_thumb.jpg");
+  @include background-size(cover);
+}
+
+.work-shape-thumbnail-9 {
+  background: url("../images/work_shape_9_thumb.jpg");
   @include background-size(cover);
 }
 

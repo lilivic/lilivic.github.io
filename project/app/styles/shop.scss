@@ -1,3 +1,6 @@
+@import "compass/css3";
+@import "extends";
+
 .shop-sub-navigation-1 {
   @extend .site-sub-navigation;
   bottom: 15px;
@@ -16,4 +19,55 @@
       bottom: 10px;
     }
   }
+}
+
+.shop-container {
+  padding: {
+    top: 100px;
+  }
+  .row:nth-child(2) {
+    padding: {
+      top: 20px;
+    }
+  }
+  .row:last-child {
+    margin: {
+      bottom: 30px;
+    }
+  }
+}
+
+.shop-description {
+  font-family: 'Wire One', sans-serif;
+  font-size: 2em;
+  color: #777;
+  p {
+    padding: {
+      top: 20px;
+      left: 30px;
+      right: 30px;
+    }
+  }
+}
+
+.shop-thumbnail {
+  height: 300px;
+}
+
+// bags
+.shop-bag-pt-thumbnail-1 {
+  background: url("../images/shop_bag_pt_1.png");
+  @include background-size(cover);
+}
+
+// bodies
+.shop-bodies-pt-thumbnail-1 {
+  background: url("../images/shop_bodies_pt_1.png");
+  @include background-size(cover);
+}
+
+// shirts
+.shop-shirts-pt-thumbnail-1 {
+  background: url("../images/shop_shirts_pt_1.png");
+  @include background-size(cover);
 }

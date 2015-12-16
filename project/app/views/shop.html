@@ -1,9 +1,62 @@
-<div class="container-fluid">
+<div class="container-fluid" ng-show="isShopUnavailable('en')">
   <div class="row">
     <div class="col-xs-12">
       <h2>
         <span ng-bind="getMessage('soon')"></span>
       </h2>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid shop-container" ng-show="isCurrentSection('bags','pt')">
+  <div class="row text-center">
+    <div class="col-md-4">
+      <a href="javascript:void(0)" class="thumbnail">
+        <div class="shop-thumbnail shop-description text-justify">
+          <p ng-bind="getMessage('shop_bags_description')"></p>
+        </div>
+      </a>
+    </div>
+    <div class="col-md-4">
+      <a href="javascript:void(0)" class="thumbnail" ng-click="open('images/shop_bag_pt_1.png')">
+        <div class="shop-thumbnail shop-bag-pt-thumbnail-1"></div>
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid shop-container" ng-show="isCurrentSection('bodies','pt')">
+  <div class="row text-center">
+    <div class="col-md-4">
+      <a href="javascript:void(0)" class="thumbnail">
+        <div class="shop-thumbnail shop-description text-justify">
+          <p ng-bind="getMessage('shop_bodies_description')"></p>
+        </div>
+      </a>
+    </div>
+    <div class="col-md-4">
+      <a href="javascript:void(0)" class="thumbnail" ng-click="open('images/shop_bodies_pt_1.png')">
+        <div class="shop-thumbnail shop-bodies-pt-thumbnail-1"></div>
+      </a>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid shop-container" ng-show="isCurrentSection('shirts','pt')">
+  <div class="row text-center">
+    <div class="col-md-4">
+      <a href="javascript:void(0)" class="thumbnail">
+        <div class="shop-thumbnail shop-description text-justify">
+          <p ng-bind="getMessage('shop_shirts_description')"></p>
+        </div>
+      </a>
+    </div>
+    <div class="col-md-4">
+      <a href="javascript:void(0)" class="thumbnail" ng-click="open('images/shop_shirts_pt_1.png')">
+        <div class="shop-thumbnail shop-shirts-pt-thumbnail-1"></div>
+      </a>
     </div>
   </div>
 </div>

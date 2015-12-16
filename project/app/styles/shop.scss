@@ -1,0 +1,103 @@
+@import "compass/css3";
+@import "extends";
+
+.shop-sub-navigation-1 {
+  @extend .site-sub-navigation;
+  bottom: 15px;
+  li > a {
+    padding: {
+      top: 0;
+    }
+  }
+}
+
+.shop-sub-navigation-2 {
+  @extend .site-sub-navigation;
+  li > a {
+    padding: {
+      top: 0;
+      bottom: 10px;
+    }
+  }
+}
+
+.shop-container {
+  padding: {
+    top: 100px;
+  }
+  .row:nth-child(2) {
+    padding: {
+      top: 20px;
+    }
+  }
+  .row:last-child {
+    margin: {
+      bottom: 30px;
+    }
+  }
+}
+
+.shop-description {
+  font-family: 'Wire One', sans-serif;
+  font-size: 2em;
+  color: #777;
+  p {
+    padding: {
+      top: 20px;
+      left: 30px;
+      right: 30px;
+    }
+  }
+}
+
+.shop-thumbnail {
+  height: 300px;
+}
+
+// bags
+.shop-bag-pt-thumbnail-1 {
+  background: url("../images/shop_bag_pt_1.png");
+  @include background-size(cover);
+}
+
+// bodies
+.shop-bodies-pt-thumbnail-1 {
+  background: url("../images/shop_bodies_pt_1.png");
+  @include background-size(cover);
+}
+
+// shirts
+.shop-shirts-pt-thumbnail-1 {
+  background: url("../images/shop_shirts_pt_1.png");
+  @include background-size(cover);
+}
+
+// cushion_covers
+.shop-cushion-covers-pt-thumbnail-1 {
+  background: url("../images/shop_cushion_covers_pt_1.png");
+  @include background-size(cover);
+}
+
+// phone_covers
+.shop-phone-covers-pt-thumbnail-1 {
+  background: url("../images/shop_phone_covers_pt_1.png");
+  @include background-size(cover);
+}
+
+// posters
+.shop-posters-pt-thumbnail-1 {
+  background: url("../images/shop_posters_pt_1.png");
+  @include background-size(cover);
+}
+
+// post_cards
+.shop-post-cards-pt-thumbnail-1 {
+  background: url("../images/shop_post_cards_pt_1.png");
+  @include background-size(cover);
+}
+
+// mugs
+.shop-mugs-pt-thumbnail-1 {
+  background: url("../images/shop_mugs_pt_1.png");
+  @include background-size(cover);
+}

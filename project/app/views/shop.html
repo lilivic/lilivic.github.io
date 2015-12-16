@@ -1,9 +1,145 @@
-<div class="container-fluid">
+<div class="container-fluid" ng-show="isShopUnavailable('en')">
   <div class="row">
     <div class="col-xs-12">
       <h2>
         <span ng-bind="getMessage('soon')"></span>
       </h2>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid shop-container" ng-show="isCurrentSection('bags','pt')">
+  <div class="row text-center">
+    <div class="col-md-4">
+      <a href="javascript:void(0)" class="thumbnail">
+        <div class="shop-thumbnail shop-description text-justify">
+          <p ng-bind="getMessage('shop_bags_description')"></p>
+        </div>
+      </a>
+    </div>
+    <div class="col-md-4">
+      <a href="https://www.colab55.com/@lilivicgallery/totebags/tartanuvem" class="thumbnail" target="_blank">
+        <div class="shop-thumbnail shop-bag-pt-thumbnail-1"></div>
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid shop-container" ng-show="isCurrentSection('bodies','pt')">
+  <div class="row text-center">
+    <div class="col-md-4">
+      <a href="javascript:void(0)" class="thumbnail">
+        <div class="shop-thumbnail shop-description text-justify">
+          <p ng-bind="getMessage('shop_bodies_description')"></p>
+        </div>
+      </a>
+    </div>
+    <div class="col-md-4">
+      <a href="https://www.colab55.com/@lilivicgallery/bodies/tartanuvem" class="thumbnail" target="_blank">
+        <div class="shop-thumbnail shop-bodies-pt-thumbnail-1"></div>
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid shop-container" ng-show="isCurrentSection('shirts','pt')">
+  <div class="row text-center">
+    <div class="col-md-4">
+      <a href="javascript:void(0)" class="thumbnail">
+        <div class="shop-thumbnail shop-description text-justify">
+          <p ng-bind="getMessage('shop_shirts_description')"></p>
+        </div>
+      </a>
+    </div>
+    <div class="col-md-4">
+      <a href="https://www.colab55.com/@lilivicgallery/tees/tartanuvem" class="thumbnail" target="_blank">
+        <div class="shop-thumbnail shop-shirts-pt-thumbnail-1"></div>
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid shop-container" ng-show="isCurrentSection('cushion_covers','pt')">
+  <div class="row text-center">
+    <div class="col-md-4">
+      <a href="javascript:void(0)" class="thumbnail">
+        <div class="shop-thumbnail shop-description text-justify">
+          <p ng-bind="getMessage('shop_cushion_covers_description')"></p>
+        </div>
+      </a>
+    </div>
+    <div class="col-md-4">
+      <a href="https://www.colab55.com/@lilivicgallery/pillows/tartanuvem" class="thumbnail" target="_blank">
+        <div class="shop-thumbnail shop-cushion-covers-pt-thumbnail-1"></div>
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid shop-container" ng-show="isCurrentSection('phone_covers','pt')">
+  <div class="row text-center">
+    <div class="col-md-4">
+      <a href="javascript:void(0)" class="thumbnail">
+        <div class="shop-thumbnail shop-description text-justify">
+          <p ng-bind="getMessage('shop_phone_covers_description')"></p>
+        </div>
+      </a>
+    </div>
+    <div class="col-md-4">
+      <a href="https://www.colab55.com/@lilivicgallery/cases/tartanuvem" class="thumbnail" target="_blank">
+        <div class="shop-thumbnail shop-phone-covers-pt-thumbnail-1"></div>
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid shop-container" ng-show="isCurrentSection('posters','pt')">
+  <div class="row text-center">
+    <div class="col-md-4">
+      <a href="javascript:void(0)" class="thumbnail">
+        <div class="shop-thumbnail shop-description text-justify">
+          <p ng-bind="getMessage('shop_posters_description')"></p>
+        </div>
+      </a>
+    </div>
+    <div class="col-md-4">
+      <a href="https://www.colab55.com/@lilivicgallery/posters/tartanuvem" class="thumbnail" target="_blank">
+        <div class="shop-thumbnail shop-posters-pt-thumbnail-1"></div>
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid shop-container" ng-show="isCurrentSection('post_cards','pt')">
+  <div class="row text-center">
+    <div class="col-md-4">
+      <a href="javascript:void(0)" class="thumbnail">
+        <div class="shop-thumbnail shop-description text-justify">
+          <p ng-bind="getMessage('shop_post_cards_description')"></p>
+        </div>
+      </a>
+    </div>
+    <div class="col-md-4">
+      <a href="https://www.colab55.com/@lilivicgallery/cards/tartanuvem" class="thumbnail" target="_blank">
+        <div class="shop-thumbnail shop-post-cards-pt-thumbnail-1"></div>
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid shop-container" ng-show="isCurrentSection('mugs','pt')">
+  <div class="row text-center">
+    <div class="col-md-4">
+      <a href="javascript:void(0)" class="thumbnail">
+        <div class="shop-thumbnail shop-description text-justify">
+          <p ng-bind="getMessage('shop_mugs_description')"></p>
+        </div>
+      </a>
+    </div>
+    <div class="col-md-4">
+      <a href="https://www.colab55.com/@lilivicgallery/mugs/tartanuvem" class="thumbnail" target="_blank">
+        <div class="shop-thumbnail shop-mugs-pt-thumbnail-1"></div>
+      </a>
     </div>
   </div>
 </div>

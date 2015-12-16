@@ -43,7 +43,7 @@
             </a>
           </li>
           <li>
-            <a ng-href="#/shop" ng-class="viewLinkClass('/shop')">
+            <a ng-href="#/shop/bags" ng-class="viewLinkClass('/shop')">
               <span ng-bind="getMessage('shop')| uppercase"></span>
             </a>
           </li>
@@ -56,6 +56,12 @@
             <a ng-href="#/about" ng-class="viewLinkClass('/about')">
               <span ng-bind="getMessage('about')| uppercase"></span>
             </a>
+          </li>
+        </ul>
+
+        <ul class="nav navbar-nav site-sub-navigation-right text-right">
+          <li>
+            <span>alo@lilivic.gallery</span>
           </li>
         </ul>
 
@@ -79,6 +85,52 @@
           <li>
             <a href="#/works/card" ng-class="viewLinkClass('/works/card')">
               <span ng-bind="getMessage('works_card') | uppercase"></span>
+            </a>
+          </li>
+        </ul>
+
+        <!-- Show sub navigation-->
+        <ul class="nav navbar-nav shop-sub-navigation-1" ng-show="isCurrentLocation('/shop')">
+          <li>
+            <a href="#/shop/bags" ng-class="viewLinkClass('/shop/bags')">
+              <span ng-bind="getMessage('shop_bags') | uppercase"></span>
+            </a>
+          </li>
+          <li>
+            <a href="#/shop/bodies" ng-class="viewLinkClass('/shop/bodies')">
+              <span ng-bind="getMessage('shop_bodies') | uppercase"></span>
+            </a>
+          </li>
+          <li>
+            <a href="#/shop/shirts" ng-class="viewLinkClass('/shop/shirts')">
+              <span ng-bind="getMessage('shop_shirts') | uppercase"></span>
+            </a>
+          </li>
+          <li>
+            <a href="#/shop/cushion_covers" ng-class="viewLinkClass('/shop/cushion_covers')">
+              <span ng-bind="getMessage('shop_cushion_covers') | uppercase"></span>
+            </a>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav shop-sub-navigation-2" ng-show="isCurrentLocation('/shop')">
+          <li>
+            <a href="#/shop/phone_covers" ng-class="viewLinkClass('/shop/phone_covers')">
+              <span ng-bind="getMessage('shop_phone_covers') | uppercase"></span>
+            </a>
+          </li>
+          <li>
+            <a href="#/shop/posters" ng-class="viewLinkClass('/shop/posters')">
+              <span ng-bind="getMessage('shop_posters') | uppercase"></span>
+            </a>
+          </li>
+          <li>
+            <a href="#/shop/post_cards" ng-class="viewLinkClass('/shop/post_cards')">
+              <span ng-bind="getMessage('shop_post_cards') | uppercase"></span>
+            </a>
+          </li>
+          <li>
+            <a href="#/shop/mugs" ng-class="viewLinkClass('/shop/mugs')">
+              <span ng-bind="getMessage('shop_mugs') | uppercase"></span>
             </a>
           </li>
         </ul>
@@ -111,7 +163,7 @@
           <img src="images/logo_btech_footer.png">
         </a>
       </div>
-      <p class="navbar-text navbar-right">
+      <p class="navbar-text navbar-right hidden-sm hidden-xs">
         <span ng-bind="getMessage('powered_by')"></span>
       </p>
     </div>

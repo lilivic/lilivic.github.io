@@ -40,6 +40,10 @@ a {
   position: fixed;
   bottom: 0;
   width: 100%;
+  padding: {
+    left: 0;
+    right: 0;
+  }
   .navbar {
     min-height: 25px;
     background: rgba(255, 255, 255, 0.9);
@@ -165,6 +169,7 @@ a {
 
 .site-sub-navigation-right {
   @extend .site-sub-navigation;
+  list-style-type: none;
   right: 0;
   bottom: 15px;
   font-size: 1.3em;
@@ -174,5 +179,24 @@ a {
     padding: {
       right: 30px;
     }
+  }
+}
+
+.site-sub-navigation-mobile {
+  list-style-type: none;
+  li > a {
+    color: #777;
+  }
+}
+
+.site-mobile-credit {
+  padding: {
+    top: 0;
+    right: 0;
+  }
+  color: #777;
+  font-size: 0.8em;
+  img {
+    margin-top: -20px;
   }
 }

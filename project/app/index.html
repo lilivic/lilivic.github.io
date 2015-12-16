@@ -41,32 +41,102 @@
             <a ng-href="#/works/wall" ng-class="viewLinkClass('/works')">
               <span ng-bind="getMessage('works')| uppercase"></span>
             </a>
+            <!-- Works sub navigation mobile -->
+            <ul class="site-sub-navigation-mobile hidden-md hidden-lg" ng-show="isCurrentLocation('/works')">
+              <li>
+                <a href="#/works/wall" ng-class="viewLinkClass('/works/wall')">
+                  <span ng-bind="getMessage('works_wall') | uppercase"></span>
+                </a>
+              </li>
+              <li>
+                <a href="#/works/draw" ng-class="viewLinkClass('/works/draw')">
+                  <span ng-bind="getMessage('works_draw') | uppercase"></span>
+                </a>
+              </li>
+              <li>
+                <a href="#/works/shape" ng-class="viewLinkClass('/works/shape')">
+                  <span ng-bind="getMessage('works_shape') | uppercase"></span>
+                </a>
+              </li>
+              <li>
+                <a href="#/works/card" ng-class="viewLinkClass('/works/card')">
+                  <span ng-bind="getMessage('works_card') | uppercase"></span>
+                </a>
+              </li>
+            </ul>
           </li>
           <li>
             <a ng-href="#/shop/bags" ng-class="viewLinkClass('/shop')">
               <span ng-bind="getMessage('shop')| uppercase"></span>
             </a>
+            <ul class="site-sub-navigation-mobile hidden-md hidden-lg" ng-show="isCurrentLocation('/shop')">
+              <li>
+                <a href="#/shop/bags" ng-class="viewLinkClass('/shop/bags')">
+                  <span ng-bind="getMessage('shop_bags') | uppercase"></span>
+                </a>
+              </li>
+              <li>
+                <a href="#/shop/bodies" ng-class="viewLinkClass('/shop/bodies')">
+                  <span ng-bind="getMessage('shop_bodies') | uppercase"></span>
+                </a>
+              </li>
+              <li>
+                <a href="#/shop/shirts" ng-class="viewLinkClass('/shop/shirts')">
+                  <span ng-bind="getMessage('shop_shirts') | uppercase"></span>
+                </a>
+              </li>
+              <li>
+                <a href="#/shop/cushion_covers" ng-class="viewLinkClass('/shop/cushion_covers')">
+                  <span ng-bind="getMessage('shop_cushion_covers') | uppercase"></span>
+                </a>
+              </li>
+              <li>
+                <a href="#/shop/phone_covers" ng-class="viewLinkClass('/shop/phone_covers')">
+                  <span ng-bind="getMessage('shop_phone_covers') | uppercase"></span>
+                </a>
+              </li>
+              <li>
+                <a href="#/shop/posters" ng-class="viewLinkClass('/shop/posters')">
+                  <span ng-bind="getMessage('shop_posters') | uppercase"></span>
+                </a>
+              </li>
+              <li>
+                <a href="#/shop/post_cards" ng-class="viewLinkClass('/shop/post_cards')">
+                  <span ng-bind="getMessage('shop_post_cards') | uppercase"></span>
+                </a>
+              </li>
+              <li>
+                <a href="#/shop/mugs" ng-class="viewLinkClass('/shop/mugs')">
+                  <span ng-bind="getMessage('shop_mugs') | uppercase"></span>
+                </a>
+              </li>
+            </ul>
           </li>
           <li>
             <a ng-href="#/blog" ng-class="viewLinkClass('/blog')">
-              <span ng-bind="getMessage('blog')| uppercase"></span>
+              <span ng-bind="getMessage('blog') | uppercase"></span>
             </a>
           </li>
           <li>
             <a ng-href="#/about" ng-class="viewLinkClass('/about')">
-              <span ng-bind="getMessage('about')| uppercase"></span>
+              <span ng-bind="getMessage('about') | uppercase"></span>
             </a>
           </li>
         </ul>
 
-        <ul class="nav navbar-nav site-sub-navigation-right text-right">
+        <ul class="site-sub-navigation-right text-right">
           <li>
+            <span class="hidden-sm hidden-xs" ng-bind="getMessage('say') | lowercase"></span>
             <span>alo@lilivic.gallery</span>
+            <a class="hidden-md hidden-lg site-mobile-credit" href="http://btech.software/#/web" target="_blank">
+              <span ng-bind="getMessage('powered_by')"></span>
+              <img src="images/logo_btech_footer.png">
+            </a>
           </li>
         </ul>
 
-        <!-- Works sub navigation-->
-        <ul class="nav navbar-nav site-sub-navigation" ng-show="isCurrentLocation('/works')">
+        <!-- Works sub navigation desktop -->
+        <ul class="nav navbar-nav site-sub-navigation hidden-sm hidden-xs" ng-show="isCurrentLocation('/works')">
           <li>
             <a href="#/works/wall" ng-class="viewLinkClass('/works/wall')">
               <span ng-bind="getMessage('works_wall') | uppercase"></span>
@@ -89,8 +159,8 @@
           </li>
         </ul>
 
-        <!-- Show sub navigation-->
-        <ul class="nav navbar-nav shop-sub-navigation-1" ng-show="isCurrentLocation('/shop')">
+        <!-- Shop sub navigation-->
+        <ul class="nav navbar-nav shop-sub-navigation-1 hidden-sm hidden-xs" ng-show="isCurrentLocation('/shop')">
           <li>
             <a href="#/shop/bags" ng-class="viewLinkClass('/shop/bags')">
               <span ng-bind="getMessage('shop_bags') | uppercase"></span>
@@ -112,7 +182,7 @@
             </a>
           </li>
         </ul>
-        <ul class="nav navbar-nav shop-sub-navigation-2" ng-show="isCurrentLocation('/shop')">
+        <ul class="nav navbar-nav shop-sub-navigation-2 hidden-sm hidden-xs" ng-show="isCurrentLocation('/shop')">
           <li>
             <a href="#/shop/phone_covers" ng-class="viewLinkClass('/shop/phone_covers')">
               <span ng-bind="getMessage('shop_phone_covers') | uppercase"></span>
@@ -155,7 +225,7 @@
 <div class="page-content" ng-view=""></div>
 
 
-<div class="footer">
+<div class="footer hidden-sm hidden-xs">
   <div class="navbar navbar-default" role="navigation" ng-controller="NavigationCtrl">
     <div class="container-fluid">
       <div class="navbar-brand navbar-right">
@@ -163,7 +233,7 @@
           <img src="images/logo_btech_footer.png">
         </a>
       </div>
-      <p class="navbar-text navbar-right hidden-sm hidden-xs">
+      <p class="navbar-text navbar-right">
         <span ng-bind="getMessage('powered_by')"></span>
       </p>
     </div>

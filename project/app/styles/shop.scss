@@ -71,3 +71,33 @@
   background: url("../images/shop_shirts_pt_1.png");
   @include background-size(cover);
 }
+
+// cushion_covers
+.shop-cushion-covers-pt-thumbnail-1 {
+  background: url("../images/shop_cushion_covers_pt_1.png");
+  @include background-size(cover);
+}
+
+// phone_covers
+.shop-phone-covers-pt-thumbnail-1 {
+  background: url("../images/shop_phone_covers_pt_1.png");
+  @include background-size(cover);
+}
+
+// posters
+.shop-posters-pt-thumbnail-1 {
+  background: url("../images/shop_posters_pt_1.png");
+  @include background-size(cover);
+}
+
+// post_cards
+.shop-post-cards-pt-thumbnail-1 {
+  background: url("../images/shop_post_cards_pt_1.png");
+  @include background-size(cover);
+}
+
+// mugs
+.shop-mugs-pt-thumbnail-1 {
+  background: url("../images/shop_mugs_pt_1.png");
+  @include background-size(cover);
+}

@@ -1,0 +1,19 @@
+.shop-sub-navigation-1 {
+  @extend .site-sub-navigation;
+  bottom: 15px;
+  li > a {
+    padding: {
+      top: 0;
+    }
+  }
+}
+
+.shop-sub-navigation-2 {
+  @extend .site-sub-navigation;
+  li > a {
+    padding: {
+      top: 0;
+      bottom: 10px;
+    }
+  }
+}

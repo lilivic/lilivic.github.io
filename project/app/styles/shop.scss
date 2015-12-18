@@ -60,9 +60,30 @@
   @include background-size(cover);
 }
 
+.shop-bag-pt-thumbnail-2 {
+  background: url("../images/shop_bag_pt_2.png");
+  @include background-size(cover);
+}
+
+.shop-bag-pt-thumbnail-3 {
+  background: url("../images/shop_bag_pt_3.png");
+  @include background-size(cover);
+}
+
+
 // bodies
 .shop-bodies-pt-thumbnail-1 {
   background: url("../images/shop_bodies_pt_1.png");
+  @include background-size(cover);
+}
+
+.shop-bodies-pt-thumbnail-2 {
+  background: url("../images/shop_bodies_pt_2.png");
+  @include background-size(cover);
+}
+
+.shop-bodies-pt-thumbnail-3 {
+  background: url("../images/shop_bodies_pt_3.png");
   @include background-size(cover);
 }
 
@@ -72,9 +93,29 @@
   @include background-size(cover);
 }
 
+.shop-shirts-pt-thumbnail-2 {
+  background: url("../images/shop_shirts_pt_2.png");
+  @include background-size(cover);
+}
+
+.shop-shirts-pt-thumbnail-3 {
+  background: url("../images/shop_shirts_pt_3.png");
+  @include background-size(cover);
+}
+
 // cushion_covers
 .shop-cushion-covers-pt-thumbnail-1 {
   background: url("../images/shop_cushion_covers_pt_1.png");
+  @include background-size(cover);
+}
+
+.shop-cushion-covers-pt-thumbnail-2 {
+  background: url("../images/shop_cushion_covers_pt_2.png");
+  @include background-size(cover);
+}
+
+.shop-cushion-covers-pt-thumbnail-3 {
+  background: url("../images/shop_cushion_covers_pt_3.png");
   @include background-size(cover);
 }
 
@@ -84,9 +125,29 @@
   @include background-size(cover);
 }
 
+.shop-phone-covers-pt-thumbnail-2 {
+  background: url("../images/shop_phone_covers_pt_2.png");
+  @include background-size(cover);
+}
+
+.shop-phone-covers-pt-thumbnail-3 {
+  background: url("../images/shop_phone_covers_pt_3.png");
+  @include background-size(cover);
+}
+
 // posters
 .shop-posters-pt-thumbnail-1 {
   background: url("../images/shop_posters_pt_1.png");
+  @include background-size(cover);
+}
+
+.shop-posters-pt-thumbnail-2 {
+  background: url("../images/shop_posters_pt_2.png");
+  @include background-size(cover);
+}
+
+.shop-posters-pt-thumbnail-3 {
+  background: url("../images/shop_posters_pt_3.png");
   @include background-size(cover);
 }
 
@@ -96,8 +157,28 @@
   @include background-size(cover);
 }
 
+.shop-post-cards-pt-thumbnail-2 {
+  background: url("../images/shop_post_cards_pt_2.png");
+  @include background-size(cover);
+}
+
+.shop-post-cards-pt-thumbnail-3 {
+  background: url("../images/shop_post_cards_pt_3.png");
+  @include background-size(cover);
+}
+
 // mugs
 .shop-mugs-pt-thumbnail-1 {
   background: url("../images/shop_mugs_pt_1.png");
+  @include background-size(cover);
+}
+
+.shop-mugs-pt-thumbnail-2 {
+  background: url("../images/shop_mugs_pt_2.png");
+  @include background-size(cover);
+}
+
+.shop-mugs-pt-thumbnail-3 {
+  background: url("../images/shop_mugs_pt_3.png");
   @include background-size(cover);
 }

@@ -5,7 +5,6 @@ angular.module('lilivicApp').service('i18n', function () {
   var dictionary = {
     en: {
       about: 'Bio',
-      about_text: 'Soon about me...',
       blog: 'Blog',
       powered_by: 'Powered By',
       shop: 'Shop',
@@ -34,30 +33,6 @@ angular.module('lilivicApp').service('i18n', function () {
     },
     pt: {
       about: 'Bio',
-      about_text: 'Sou a Aline Victor, uma artista brasileira, arquiteta de formação, pós graduada em gestão ' +
-      'ambiental, com muitos anos de trabalho paisagístico na bagagem. Para mim faz um enorme sentido toda essa ' +
-      'interligação: como arquiteta urbanista, aprendi a compreender o todo e discernir sobre como minha ' +
-      'criatividade pode trabalhar a favor das pessoas, em diferentes escalas - seja a obra de uma residência ou o ' +
-      'planejamento de um bairro. Como gestora ambiental, aprendi a aplicar estratégia organizacional ao meu ' +
-      'processo e a buscar novas tecnologias que atendam aos novos projetos. E dentro da arquitetura está o ' +
-      'paisagismo, uma área tão incrível e muitas vezes negligenciada da formação: a arte de criar espaços ' +
-      'utilizando a natureza como protagonista - e de quebra, aproveitando todas as características inerentes à ' +
-      'natureza, como o fornecimento de sombras, amenização das temperaturas, etc... A auto-intitulação como ' +
-      'artista surgiu recentemente, quando dei mais um passo em minha carreira e resolvi trazer a tona e tornar meu ' +
-      'carro-chefe toda a criatividade que minha formação sempre me exigiu. Não tornei-me artista; sempre o fui, ' +
-      'desde o momento que fiz meu primeiro risco como arquiteta-urbanista-paisagista. Ser artista é a base de toda ' +
-      'minha formação. É utilizar meu conhecimento técnico e minha sensibilidade para criar espaços e objetos que ' +
-      'atendam às necessidades das pessoas ao mesmo tempo em que sejam repletos de beleza e valor. A Lilivic Gallery ' +
-      'é o meu estúdio de arte, onde desenvolvo trabalhos criativos para diversos públicos, pois a arte é intrínseca ' +
-      'à nossa vida e pode (e deve!) permear todos os cantos do nosso dia-a-dia.   Na aba "Galeria" vocês podem ' +
-      'acompanhar meu trabalho artístico e o processo do desenvolvimento da linguagem para cada projeto. Apesar de ' +
-      'todos possuírem a "minha" linguagem, cada projeto é tratado com muito carinho e de forma individual, afinal, ' +
-      'para mim, o mais importante do trabalho é que ele atenda aos desejos do cliente e seja mais do que um ' +
-      'trabalho bonito: tem que ter significado e valor para quem o possui. O processo de aprendizado como artista ' +
-      'é intenso e constante: novas técnicas, novos materiais, novos desafios, novas formas de trazer a beleza para ' +
-      'situações muitos diversas - desde uma prancha de surf até paredes de uma instituição beneficente. Acredito ' +
-      'que não exista nada mais belo em meu trabalho que isso: o estímulo constante pelo aprendizado e por formas de ' +
-      'transformar, todos os dias, as vidas das pessoas em através da arte',
       blog: 'Blog',
       shop: 'Shop',
       shop_bags: 'Bolsas',
@@ -101,13 +76,20 @@ angular.module('lilivicApp').service('i18n', function () {
       scope.getMessage = this.getMessage;
       scope.setLanguage = this.setLanguage;
       scope.getLanguage = this.getLanguage;
+      scope.isEnglishSet = this.isEnglishSet;
+      scope.isPortugueseSet = this.isPortugueseSet;
     },
     setLanguage: function (language) {
       currentLanguage = language;
     },
     getLanguage: function () {
       return currentLanguage;
+    },
+    isEnglishSet: function () {
+      return currentLanguage === 'en';
+    },
+    isPortugueseSet: function () {
+      return currentLanguage === 'pt';
     }
   };
-
 });

@@ -1,12 +1,55 @@
-<div class="container-fluid">
+<div class="container-fluid about_container">
   <div class="row">
-    <div class="col-xs-12 col-md-offset-1 col-md-10 ">
+    <div class="col-xs-12 col-md-4 about_picture">
       <img class="img-responsive" src="/images/bio.jpg">
     </div>
-  </div>
-  <div class="row">
-    <div class="col-xs-12 col-md-offset-1 col-md-10 text-justify about_text">
-      <p ng-bind="getMessage('about_text')"></p>
+    <div class="col-xs-12 col-md-7 text-justify about_text" ng-show="isEnglishSet()">
+      <p>
+        Work in progress...
+      </p>
+    </div>
+    <div class="col-xs-12 col-md-7 text-justify about_text" ng-show="isPortugueseSet()">
+      <p>
+        Sou a Aline Victor, artista, brasileira, arquiteta de formação, pós graduada em gestão ambiental, com muitos
+        anos de trabalho paisagístico na bagagem.
+      </p>
+
+      <p>
+        Ser artista é a base de toda minha formação. É utilizar meu conhecimento técnico e minha sensibilidade para
+        criar espaços e objetos que atendam às necessidades das pessoas ao mesmo tempo em que sejam repletos de beleza e
+        valor.
+      </p>
+
+      <p>
+        Como arquiteta urbanista, aprendi a compreender o todo e discernir sobre como minha criatividade pode trabalhar
+        a favor das pessoas - seja a obra de uma residência ou o planejamento de um bairro. O paisagismo, uma grande
+        paixão, é a arte de criar espaços utilizando a natureza como protagonista.
+      </p>
+
+      <p>
+        Como gestora ambiental, aprendi a aplicar estratégia organizacional ao meu processo e sempre buscar novas
+        tecnologias e soluções criativas para os projetos.
+      </p>
+
+      <p>
+        A Lilivic Gallery é o meu estúdio de arte, onde desenvolvo trabalhos criativos para diversos públicos, pois a
+        arte é intrínseca à nossa vida e pode (e deve!) permear todos os cantos do nosso dia-a-dia. Na aba "Galeria"
+        vocês podem acompanhar meu trabalho artístico e o processo do desenvolvimento da linguagem para cada projeto. O
+        mais importante do trabalho é que ele atenda aos desejos do cliente e seja mais do que um trabalho bonito: tem
+        que ter significado!
+      </p>
+
+      <p>
+        O processo de aprendizado como artista é intenso e constante: novas técnicas, novos materiais, novos desafios,
+        novas formas de trazer a beleza para situações muito diversas - desde uma prancha de surf até paredes de uma
+        instituição beneficente.
+      </p>
+
+      <p>
+        Acredito que não exista nada mais belo do que o estímulo constante pelo aprendizado e por formas de transformar,
+        todos os dias, as vidas das pessoas através da arte.
+      </p>
+
     </div>
   </div>
 </div>

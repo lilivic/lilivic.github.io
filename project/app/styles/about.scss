@@ -1,7 +1,19 @@
 
-.about_text {
-  margin: {
-    top: 20px;
+.about_container {
+  padding: {
+    top: 100px;
     bottom: 40px;
   }
+}
+
+.about_picture {
+  img {
+    border-radius: 50%;
+  }
+
+}
+
+.about_text {
+  font-family: 'Buda', cursive;
+  font-size: 1.2em;
 }

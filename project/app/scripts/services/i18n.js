@@ -6,7 +6,7 @@ angular.module('lilivicApp').service('i18n', function () {
     en: {
       about: 'Bio',
       blog: 'Media',
-      footnote:'Copyright © 2016 · ',
+      footnote: 'Copyright © 2016 · ',
       powered_by: 'Powered By',
       shop: 'Shop',
       shop_bags: 'Bags',
@@ -35,7 +35,7 @@ angular.module('lilivicApp').service('i18n', function () {
     pt: {
       about: 'Bio',
       blog: 'Mídia',
-      footnote:'2016 · Todos os direitos reservados · ',
+      footnote: '2016 · Todos os direitos reservados · ',
       shop: 'Shop',
       shop_bags: 'Bolsas',
       shop_bags_description: 'Bolsas em Córdoba com alça em cadarço de algodão preto e impressão frente e verso. No modelo tote bag, com 40x43x5cm, não têm forro/fecho e são super resistentes.',
@@ -64,7 +64,7 @@ angular.module('lilivicApp').service('i18n', function () {
   };
 
   var currentLanguage = null;
-  if (navigator.language.startsWith('pt')) {
+  if (navigator.language.indexOf('pt') > -1) {
     currentLanguage = 'pt';
   } else {
     currentLanguage = 'en';

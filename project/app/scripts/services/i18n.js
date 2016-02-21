@@ -5,6 +5,7 @@ angular.module('lilivicApp').service('i18n', function () {
   var dictionary = {
     en: {
       about: 'Bio',
+      dimensions: 'Dimensions',
       footnote: 'Copyright © 2016 · ',
       media: 'Media',
       media_blog: 'Blog',
@@ -28,6 +29,7 @@ angular.module('lilivicApp').service('i18n', function () {
       shop_shirts: 'T shirts',
       shop_shirts_description: '?',
       soon: 'Soon',
+      technique: 'Technique',
       works: 'Gallery',
       works_card: 'Cards',
       works_draw: 'Draws',
@@ -36,6 +38,7 @@ angular.module('lilivicApp').service('i18n', function () {
     },
     pt: {
       about: 'Bio',
+      dimensions: 'Dimensões',
       footnote: '2016 · Todos os direitos reservados · ',
       media: 'Mídia',
       media_blog: 'Blog',
@@ -59,6 +62,7 @@ angular.module('lilivicApp').service('i18n', function () {
       shop_shirts_description: 'Camiseta Baby Long 100% algodão, em malha estonada ou quality, modelagem especial mais acinturada e comprida e impressão direta sobre o tecido, garantindo conforto e caimento perfeito. Ah, não desbota nem encolhe!',
       powered_by: 'Uma invenção',
       soon: 'Em breve',
+      technique: 'Técnica',
       works: 'Galeria',
       works_card: 'Cartões',
       works_draw: 'Ilustrações',

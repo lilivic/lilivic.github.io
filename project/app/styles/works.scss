@@ -15,6 +15,15 @@
   height: 300px;
 }
 
+.work-thumbnail-text {
+  position: relative;
+  bottom: 145px;
+  background-color: rgba(248, 248, 248, 0.8);
+  width: 100%;
+  float: left;
+  font-family: 'Buda', cursive;
+}
+
 .work-navigation-link {
   $default-text-shadow-blur: 3px;
   $default-text-shadow-v-offset: 1px;
@@ -325,6 +334,10 @@
 }
 
 @media screen and (min-width: 768px) {
+  .work-thumbnail-text {
+    display: none;
+  }
+
   a.thumbnail {
     & > div.work-thumbnail {
       @include filter(grayscale(100%));
@@ -332,6 +345,12 @@
 
     &:hover > div.work-thumbnail {
       @include filter(none);
+    }
+
+    &:hover {
+      .work-thumbnail-text {
+        display: block;
+      }
     }
   }
 }

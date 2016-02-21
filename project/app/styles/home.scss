@@ -1,5 +1,10 @@
 @import "compass/css3/background-size";
 
+.home_landing_container {
+  position: fixed;
+  top: 40%;
+}
+
 .home_cover_background_1 {
   background: url("../images/bg_home_1.jpg") no-repeat fixed top left;
   @include background-size(cover);

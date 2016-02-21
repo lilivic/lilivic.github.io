@@ -41,10 +41,10 @@ angular
         controller: 'ShopCtrl',
         controllerAs: 'shop'
       })
-      .when('/blog', {
-        templateUrl: 'views/blog.html',
-        controller: 'BlogCtrl',
-        controllerAs: 'blog'
+      .when('/media/:section', {
+        templateUrl: 'views/media.html',
+        controller: 'MediaCtrl',
+        controllerAs: 'media'
       })
       .when('/contact', {
         templateUrl: 'views/contact.html',

@@ -5,12 +5,7 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
 
-// titulos das obras
-@import url(http://fonts.googleapis.com/css?family=Wire+One);
-// titulo principal
-@import url(https://fonts.googleapis.com/css?family=Old+Standard+TT);
-// itens do menu
-@import url(https://fonts.googleapis.com/css?family=Buda:300);
+@import url(http://fonts.googleapis.com/css?family=Buda:300|Wire+One|Old+Standard+TT|Megrim);
 
 @import "extends";
 @import "home";

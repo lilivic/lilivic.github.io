@@ -1,6 +1,7 @@
 'use strict';
 
-angular.module('lilivicApp').controller('HomeCtrl', function ($rootScope, $scope, $timeout) {
+angular.module('lilivicApp').controller('HomeCtrl', function ($rootScope, $scope, $timeout, i18n) {
+  i18n.init($scope);
 
   $scope.coverClass = 'hide';
   $scope.coverCounter = 0;

@@ -55,130 +55,73 @@
 }
 
 // bags
-.shop-bag-pt-thumbnail-1 {
-  background: url("../images/shop_bag_pt_1.png");
-  @include background-size(cover);
+$shop-bag-pt-count: 3;
+@for $i from 1 through $shop-bag-pt-count {
+  .shop-bag-pt-thumbnail-#{$i} {
+    background: url("../images/shop_bag_pt_#{$i}.jpg");
+    @include background-size(cover);
+  }
 }
-
-.shop-bag-pt-thumbnail-2 {
-  background: url("../images/shop_bag_pt_2.png");
-  @include background-size(cover);
-}
-
-.shop-bag-pt-thumbnail-3 {
-  background: url("../images/shop_bag_pt_3.png");
-  @include background-size(cover);
-}
-
 
 // bodies
-.shop-bodies-pt-thumbnail-1 {
-  background: url("../images/shop_bodies_pt_1.png");
-  @include background-size(cover);
-}
-
-.shop-bodies-pt-thumbnail-2 {
-  background: url("../images/shop_bodies_pt_2.png");
-  @include background-size(cover);
-}
-
-.shop-bodies-pt-thumbnail-3 {
-  background: url("../images/shop_bodies_pt_3.png");
-  @include background-size(cover);
+$shop-bodies-pt-count: 3;
+@for $i from 1 through $shop-bodies-pt-count {
+  .shop-bodies-pt-thumbnail-#{$i} {
+    background: url("../images/shop_bodies_pt_#{$i}.jpg");
+    @include background-size(cover);
+  }
 }
 
 // shirts
-.shop-shirts-pt-thumbnail-1 {
-  background: url("../images/shop_shirts_pt_1.png");
-  @include background-size(cover);
-}
-
-.shop-shirts-pt-thumbnail-2 {
-  background: url("../images/shop_shirts_pt_2.png");
-  @include background-size(cover);
-}
-
-.shop-shirts-pt-thumbnail-3 {
-  background: url("../images/shop_shirts_pt_3.png");
-  @include background-size(cover);
+$shop-shirts-pt-count: 3;
+@for $i from 1 through $shop-shirts-pt-count {
+  .shop-shirts-pt-thumbnail-#{$i} {
+    background: url("../images/shop_shirts_pt_#{$i}.jpg");
+    @include background-size(cover);
+  }
 }
 
 // cushion_covers
-.shop-cushion-covers-pt-thumbnail-1 {
-  background: url("../images/shop_cushion_covers_pt_1.png");
-  @include background-size(cover);
-}
-
-.shop-cushion-covers-pt-thumbnail-2 {
-  background: url("../images/shop_cushion_covers_pt_2.png");
-  @include background-size(cover);
-}
-
-.shop-cushion-covers-pt-thumbnail-3 {
-  background: url("../images/shop_cushion_covers_pt_3.png");
-  @include background-size(cover);
+$shop-cushion-covers-pt-count: 3;
+@for $i from 1 through $shop-cushion-covers-pt-count {
+  .shop-cushion-covers-pt-thumbnail-#{$i} {
+    background: url("../images/shop_cushion-covers_pt_#{$i}.jpg");
+    @include background-size(cover);
+  }
 }
 
 // phone_covers
-.shop-phone-covers-pt-thumbnail-1 {
-  background: url("../images/shop_phone_covers_pt_1.png");
-  @include background-size(cover);
-}
-
-.shop-phone-covers-pt-thumbnail-2 {
-  background: url("../images/shop_phone_covers_pt_2.png");
-  @include background-size(cover);
-}
-
-.shop-phone-covers-pt-thumbnail-3 {
-  background: url("../images/shop_phone_covers_pt_3.png");
-  @include background-size(cover);
+$shop-phone-covers-pt-count: 3;
+@for $i from 1 through $shop-phone-covers-pt-count {
+  .shop-phone-covers-pt-thumbnail-#{$i} {
+    background: url("../images/shop_phone-covers_pt_#{$i}.jpg");
+    @include background-size(cover);
+  }
 }
 
 // posters
-.shop-posters-pt-thumbnail-1 {
-  background: url("../images/shop_posters_pt_1.png");
-  @include background-size(cover);
-}
-
-.shop-posters-pt-thumbnail-2 {
-  background: url("../images/shop_posters_pt_2.png");
-  @include background-size(cover);
-}
-
-.shop-posters-pt-thumbnail-3 {
-  background: url("../images/shop_posters_pt_3.png");
-  @include background-size(cover);
+$shop-posters-pt-count: 2;
+@for $i from 1 through $shop-posters-pt-count {
+  .shop-posters-pt-thumbnail-#{$i} {
+    background: url("../images/shop_posters_pt_#{$i}.jpg");
+    @include background-size(cover);
+  }
 }
 
 // post_cards
-.shop-post-cards-pt-thumbnail-1 {
-  background: url("../images/shop_post_cards_pt_1.png");
-  @include background-size(cover);
-}
-
-.shop-post-cards-pt-thumbnail-2 {
-  background: url("../images/shop_post_cards_pt_2.png");
-  @include background-size(cover);
-}
-
-.shop-post-cards-pt-thumbnail-3 {
-  background: url("../images/shop_post_cards_pt_3.png");
-  @include background-size(cover);
+$shop-post-cards-pt-count: 2;
+@for $i from 1 through $shop-post-cards-pt-count {
+  .shop-post-cards-pt-thumbnail-#{$i} {
+    background: url("../images/shop_post_cards_pt_#{$i}.jpg");
+    @include background-size(cover);
+  }
 }
 
 // mugs
-.shop-mugs-pt-thumbnail-1 {
-  background: url("../images/shop_mugs_pt_1.png");
-  @include background-size(cover);
-}
-
-.shop-mugs-pt-thumbnail-2 {
-  background: url("../images/shop_mugs_pt_2.png");
-  @include background-size(cover);
-}
-
-.shop-mugs-pt-thumbnail-3 {
-  background: url("../images/shop_mugs_pt_3.png");
-  @include background-size(cover);
+$shop-mugs-pt-count: 2;
+@for $i from 1 through $shop-mugs-pt-count {
+  .shop-mugs-pt-thumbnail-#{$i} {
+    background: url("../images/shop_mugs_pt_#{$i}.jpg");
+    @include background-size(cover);
+  }
 }

@@ -52,284 +52,36 @@
   }
 }
 
-.work-card-thumbnail-1 {
-  background: url("../images/work_card_1_thumb.jpg");
-  @include background-size(cover);
+$work-card-count: 6;
+@for $i from 1 through $work-card-count {
+  .work-card-thumbnail-#{$i} {
+    background: url("../images/work_card_#{$i}_thumb.jpg");
+    @include background-size(cover);
+  }
 }
 
-.work-card-thumbnail-2 {
-  background: url("../images/work_card_2_thumb.jpg");
-  @include background-size(cover);
+$work-draw-count: 21;
+@for $i from 1 through $work-draw-count {
+  .work-draw-thumbnail-#{$i} {
+    background: url("../images/work_draw_#{$i}_thumb.jpg");
+    @include background-size(cover);
+  }
 }
 
-.work-card-thumbnail-3 {
-  background: url("../images/work_card_3_thumb.jpg");
-  @include background-size(cover);
+$work-shape-count: 9;
+@for $i from 1 through $work-shape-count {
+  .work-shape-thumbnail-#{$i} {
+    background: url("../images/work_shape_#{$i}_thumb.jpg");
+    @include background-size(cover);
+  }
 }
 
-.work-card-thumbnail-4 {
-  background: url("../images/work_card_4_thumb.jpg");
-  @include background-size(cover);
-}
-
-.work-card-thumbnail-5 {
-  background: url("../images/work_card_5_thumb.jpg");
-  @include background-size(cover);
-}
-
-.work-card-thumbnail-6 {
-  background: url("../images/work_card_6_thumb.jpg");
-  @include background-size(cover);
-}
-
-.work-draw-thumbnail-1 {
-  background: url("../images/work_draw_1_thumb.jpg");
-  @include background-size(cover);
-}
-
-.work-draw-thumbnail-2 {
-  background: url("../images/work_draw_2_thumb.jpg");
-  @include background-size(cover);
-}
-
-.work-draw-thumbnail-3 {
-  background: url("../images/work_draw_3_thumb.jpg");
-  @include background-size(cover);
-}
-
-.work-draw-thumbnail-4 {
-  background: url("../images/work_draw_4_thumb.jpg");
-  @include background-size(cover);
-}
-
-.work-draw-thumbnail-5 {
-  background: url("../images/work_draw_5_thumb.jpg");
-  @include background-size(cover);
-}
-
-.work-draw-thumbnail-6 {
-  background: url("../images/work_draw_6_thumb.jpg");
-  @include background-size(cover);
-}
-
-.work-draw-thumbnail-7 {
-  background: url("../images/work_draw_7_thumb.jpg");
-  @include background-size(cover);
-}
-
-.work-draw-thumbnail-8 {
-  background: url("../images/work_draw_8_thumb.jpg");
-  @include background-size(cover);
-}
-
-.work-draw-thumbnail-9 {
-  background: url("../images/work_draw_9_thumb.jpg");
-  @include background-size(cover);
-}
-
-.work-draw-thumbnail-10 {
-  background: url("../images/work_draw_10_thumb.jpg");
-  @include background-size(cover);
-}
-
-.work-draw-thumbnail-11 {
-  background: url("../images/work_draw_11_thumb.jpg");
-  @include background-size(cover);
-}
-
-.work-draw-thumbnail-12 {
-  background: url("../images/work_draw_12_thumb.jpg");
-  @include background-size(cover);
-}
-
-.work-draw-thumbnail-13 {
-  background: url("../images/work_draw_13_thumb.jpg");
-  @include background-size(cover);
-}
-
-.work-draw-thumbnail-14 {
-  background: url("../images/work_draw_14_thumb.jpg");
-  @include background-size(cover);
-}
-
-.work-draw-thumbnail-15 {
-  background: url("../images/work_draw_15_thumb.jpg");
-  @include background-size(cover);
-}
-
-.work-draw-thumbnail-16 {
-  background: url("../images/work_draw_16_thumb.jpg");
-  @include background-size(cover);
-}
-
-.work-draw-thumbnail-17 {
-  background: url("../images/work_draw_17_thumb.jpg");
-  @include background-size(cover);
-}
-
-.work-draw-thumbnail-18 {
-  background: url("../images/work_draw_18_thumb.jpg");
-  @include background-size(cover);
-}
-
-.work-draw-thumbnail-19 {
-  background: url("../images/work_draw_19_thumb.jpg");
-  @include background-size(cover);
-}
-
-.work-draw-thumbnail-20 {
-  background: url("../images/work_draw_20_thumb.jpg");
-  @include background-size(cover);
-}
-
-.work-draw-thumbnail-21 {
-  background: url("../images/work_draw_21_thumb.jpg");
-  @include background-size(cover);
-}
-
-.work-shape-thumbnail-1 {
-  background: url("../images/work_shape_1_thumb.jpg");
-  @include background-size(cover);
-}
-
-.work-shape-thumbnail-2 {
-  background: url("../images/work_shape_2_thumb.jpg");
-  @include background-size(cover);
-}
-
-.work-shape-thumbnail-3 {
-  background: url("../images/work_shape_3_thumb.jpg");
-  @include background-size(cover);
-}
-
-.work-shape-thumbnail-4 {
-  background: url("../images/work_shape_4_thumb.jpg");
-  @include background-size(cover);
-}
-
-.work-shape-thumbnail-5 {
-  background: url("../images/work_shape_5_thumb.jpg");
-  @include background-size(cover);
-}
-
-.work-shape-thumbnail-6 {
-  background: url("../images/work_shape_6_thumb.jpg");
-  @include background-size(cover);
-}
-
-.work-shape-thumbnail-7 {
-  background: url("../images/work_shape_7_thumb.jpg");
-  @include background-size(cover);
-}
-
-.work-shape-thumbnail-8 {
-  background: url("../images/work_shape_8_thumb.jpg");
-  @include background-size(cover);
-}
-
-.work-shape-thumbnail-9 {
-  background: url("../images/work_shape_9_thumb.jpg");
-  @include background-size(cover);
-}
-
-.work-wall-thumbnail-1 {
-  background: url("../images/work_wall_1_thumb.jpg");
-  @include background-size(cover);
-}
-
-.work-wall-thumbnail-2 {
-  background: url("../images/work_wall_2_thumb.jpg");
-  @include background-size(cover);
-}
-
-.work-wall-thumbnail-3 {
-  background: url("../images/work_wall_3_thumb.jpg");
-  @include background-size(cover);
-}
-
-.work-wall-thumbnail-4 {
-  background: url("../images/work_wall_4_thumb.jpg");
-  @include background-size(cover);
-}
-
-.work-wall-thumbnail-5 {
-  background: url("../images/work_wall_5_thumb.jpg");
-  @include background-size(cover);
-}
-
-.work-wall-thumbnail-6 {
-  background: url("../images/work_wall_6_thumb.jpg");
-  @include background-size(cover);
-}
-
-.work-wall-thumbnail-7 {
-  background: url("../images/work_wall_7_thumb.jpg");
-  @include background-size(cover);
-}
-
-.work-wall-thumbnail-8 {
-  background: url("../images/work_wall_8_thumb.jpg");
-  @include background-size(cover);
-}
-
-.work-wall-thumbnail-9 {
-  background: url("../images/work_wall_9_thumb.jpg");
-  @include background-size(cover);
-}
-
-.work-wall-thumbnail-10 {
-  background: url("../images/work_wall_10_thumb.jpg");
-  @include background-size(cover);
-}
-
-.work-wall-thumbnail-11 {
-  background: url("../images/work_wall_11_thumb.jpg");
-  @include background-size(cover);
-}
-
-.work-wall-thumbnail-12 {
-  background: url("../images/work_wall_12_thumb.jpg");
-  @include background-size(cover);
-}
-
-.work-wall-thumbnail-13 {
-  background: url("../images/work_wall_13_thumb.jpg");
-  @include background-size(cover);
-}
-
-.work-wall-thumbnail-14 {
-  background: url("../images/work_wall_14_thumb.jpg");
-  @include background-size(cover);
-}
-
-.work-wall-thumbnail-15 {
-  background: url("../images/work_wall_15_thumb.jpg");
-  @include background-size(cover);
-}
-
-.work-wall-thumbnail-16 {
-  background: url("../images/work_wall_16_thumb.jpg");
-  @include background-size(cover);
-}
-
-.work-wall-thumbnail-17 {
-  background: url("../images/work_wall_17_thumb.jpg");
-  @include background-size(cover);
-}
-
-.work-wall-thumbnail-18 {
-  background: url("../images/work_wall_18_thumb.jpg");
-  @include background-size(cover);
-}
-
-.work-wall-thumbnail-19 {
-  background: url("../images/work_wall_19_thumb.jpg");
-  @include background-size(cover);
-}
-
-.work-wall-thumbnail-20 {
-  background: url("../images/work_wall_20_thumb.jpg");
-  @include background-size(cover);
+$work-wall-count: 20;
+@for $i from 1 through $work-wall-count {
+  .work-wall-thumbnail-#{$i} {
+    background: url("../images/work_wall_#{$i}_thumb.jpg");
+    @include background-size(cover);
+  }
 }
 
 @media screen and (min-width: 768px) {

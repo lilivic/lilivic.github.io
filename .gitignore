@@ -5,4 +5,5 @@
 /project/bower_components
 /project/*.iml
 dist/
+/images/heavy/*
 .idea/
